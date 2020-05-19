@@ -73,13 +73,13 @@ module.exports = require("react");
 /* 1 */
 /***/ (function(module, exports) {
 
-module.exports = require("clsx");
+module.exports = require("prop-types");
 
 /***/ }),
 /* 2 */
 /***/ (function(module, exports) {
 
-module.exports = require("prop-types");
+module.exports = require("clsx");
 
 /***/ }),
 /* 3 */
@@ -97,7 +97,7 @@ module.exports = require("@material-ui/core");
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.fa_address = exports.fa_back = exports.res_pos_icon = exports.req_pos_icon = exports.minus_circle = exports.plus_circle = exports.checkbox_full = exports.checkbox_empty = exports.radio_full = exports.radio_empty = exports.shopping_bag = exports.next = exports.facebook = exports.instagram = exports.info = exports.next3 = exports.pickup = exports.trush = exports.delivery = exports.close_dlg = exports.visa = exports.plus = exports.logout = exports.settings = exports.payment = exports.fork = exports.order = exports.account_xl = exports.account_lg = exports.messaging = exports.gauge = exports.verified = exports.geust = exports.verify_phone = exports.prev = exports.account = undefined;
+exports.fa_address = exports.fa_back = exports.res_pos_icon = exports.reqPosIcon = exports.minusCircle = exports.plusCircle = exports.checkboxFull = exports.checkboxEmpty = exports.radioFull = exports.radioEmpty = exports.shoppingBag = exports.next = exports.facebook = exports.instagram = exports.info = exports.next3 = exports.pickup = exports.trush = exports.delivery = exports.closeDlgIcon = exports.visa = exports.plus = exports.logout = exports.settings = exports.payment = exports.fork = exports.order = exports.accountXL = exports.accountIconLg = exports.messagingIcon = exports.gaugeIcon = exports.verifiedIcon = exports.geustIcon = exports.seperateAddressIcon = exports.prevIcon = exports.accountIcon = undefined;
 
 var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" && Symbol.for && Symbol.for("react.element") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();
 
@@ -131,7 +131,7 @@ var _ref = _jsx("svg", {
   strokeLinecap: "square"
 }));
 
-var account = exports.account = function account() {
+var accountIcon = exports.accountIcon = function accountIcon() {
   return _ref;
 };
 
@@ -149,7 +149,7 @@ var _ref2 = _jsx("svg", {
   strokeLinejoin: "round"
 }));
 
-var prev = exports.prev = function prev() {
+var prevIcon = exports.prevIcon = function prevIcon() {
   return _ref2;
 };
 
@@ -201,7 +201,7 @@ var _ref3 = _jsx("svg", {
   fill: "white"
 }));
 
-var verify_phone = exports.verify_phone = function verify_phone() {
+var seperateAddressIcon = exports.seperateAddressIcon = function seperateAddressIcon() {
   return _ref3;
 };
 
@@ -230,7 +230,7 @@ var _ref4 = _jsx("svg", {
   strokeLinejoin: "round"
 }));
 
-var geust = exports.geust = function geust() {
+var geustIcon = exports.geustIcon = function geustIcon() {
   return _ref4;
 };
 
@@ -254,7 +254,7 @@ var _ref5 = _jsx("svg", {
   strokeLinejoin: "round"
 }));
 
-var verified = exports.verified = function verified() {
+var verifiedIcon = exports.verifiedIcon = function verifiedIcon() {
   return _ref5;
 };
 
@@ -323,7 +323,7 @@ var _ref6 = _jsx("svg", {
   result: "shape"
 }))));
 
-var gauge = exports.gauge = function gauge() {
+var gaugeIcon = exports.gaugeIcon = function gaugeIcon() {
   return _ref6;
 };
 
@@ -340,7 +340,7 @@ var _ref7 = _jsx("svg", {
   fill: "#CCCCCC"
 }));
 
-var messaging = exports.messaging = function messaging() {
+var messagingIcon = exports.messagingIcon = function messagingIcon() {
   return _ref7;
 };
 
@@ -371,7 +371,7 @@ var _ref8 = _jsx("svg", {
   strokeLinecap: "round"
 }));
 
-var account_lg = exports.account_lg = function account_lg() {
+var accountIconLg = exports.accountIconLg = function accountIconLg() {
   return _ref8;
 };
 
@@ -402,7 +402,7 @@ var _ref9 = _jsx("svg", {
   strokeLinecap: "square"
 })));
 
-var account_xl = exports.account_xl = function account_xl() {
+var accountXL = exports.accountXL = function accountXL() {
   return _ref9;
 };
 
@@ -673,7 +673,7 @@ var _ref20 = _jsx("svg", {
   strokeLinejoin: "round"
 }));
 
-var close_dlg = exports.close_dlg = function close_dlg() {
+var closeDlgIcon = exports.closeDlgIcon = function closeDlgIcon() {
   return _ref20;
 };
 
@@ -895,7 +895,7 @@ var _ref29 = _jsx("svg", {
   fill: "black"
 })));
 
-var shopping_bag = exports.shopping_bag = function shopping_bag() {
+var shoppingBag = exports.shoppingBag = function shoppingBag() {
   return _ref29;
 };
 
@@ -913,7 +913,7 @@ var _ref30 = _jsx("svg", {
   stroke: "#979797"
 }));
 
-var radio_empty = exports.radio_empty = function radio_empty() {
+var radioEmpty = exports.radioEmpty = function radioEmpty() {
   return _ref30;
 };
 
@@ -936,7 +936,7 @@ var _ref31 = _jsx("svg", {
   stroke: "#979797"
 }));
 
-var radio_full = exports.radio_full = function radio_full() {
+var radioFull = exports.radioFull = function radioFull() {
   return _ref31;
 };
 
@@ -956,7 +956,7 @@ var _ref32 = _jsx("svg", {
   stroke: "#979797"
 }));
 
-var checkbox_empty = exports.checkbox_empty = function checkbox_empty() {
+var checkboxEmpty = exports.checkboxEmpty = function checkboxEmpty() {
   return _ref32;
 };
 
@@ -978,7 +978,7 @@ var _ref33 = _jsx("svg", {
   fill: "white"
 }));
 
-var checkbox_full = exports.checkbox_full = function checkbox_full() {
+var checkboxFull = exports.checkboxFull = function checkboxFull() {
   return _ref33;
 };
 
@@ -1009,7 +1009,7 @@ var _ref34 = _jsx("svg", {
   strokeWidth: "2"
 }));
 
-var plus_circle = exports.plus_circle = function plus_circle() {
+var plusCircle = exports.plusCircle = function plusCircle() {
   return _ref34;
 };
 
@@ -1033,7 +1033,7 @@ var _ref35 = _jsx("svg", {
   fill: "currentColor"
 }));
 
-var minus_circle = exports.minus_circle = function minus_circle() {
+var minusCircle = exports.minusCircle = function minusCircle() {
   return _ref35;
 };
 
@@ -1062,7 +1062,7 @@ var _ref36 = _jsx("svg", {
   strokeLinejoin: "round"
 }));
 
-var req_pos_icon = exports.req_pos_icon = function req_pos_icon() {
+var reqPosIcon = exports.reqPosIcon = function reqPosIcon() {
   return _ref36;
 };
 
@@ -1166,16 +1166,6 @@ var _ref39 = _jsx("svg", {
 var fa_address = exports.fa_address = function fa_address() {
   return _ref39;
 };
-// export const account = () => (
-// );
-// export const account = () => (
-// );
-// export const account = () => (
-// );
-// export const account = () => (
-// );
-// export const account = () => (
-// );
 
 /***/ }),
 /* 5 */
@@ -1199,7 +1189,7 @@ module.exports = require("react-redux");
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.GetUserInfo = exports.SignOut = exports.SignIn = exports.delete_address = exports.update_address = exports.add_address = exports.delete_card = exports.edit_card = exports.add_card = exports.order_history = exports.UPDATE_ADDRESS_SUCCESS = exports.UPDATE_ADDRESS_FAILED = exports.ADD_ADDRESS_SUCCESS = exports.ADD_ADDRESS_FAILED = exports.GET_USERINFO = exports.SIGN_OUT = exports.SIGN_IN = exports.ORDER_LIST = exports.ADD_ORDERED = undefined;
+exports.GetUserInfo = exports.signOut = exports.signIn = exports.delete_address = exports.update_address = exports.add_address = exports.delete_card = exports.edit_card = exports.add_card = exports.order_history = exports.UPDATE_ADDRESS_SUCCESS = exports.UPDATE_ADDRESS_FAILED = exports.ADD_ADDRESS_SUCCESS = exports.ADD_ADDRESS_FAILED = exports.GET_USERINFO = exports.SIGN_OUT = exports.SIGN_IN = exports.ORDER_LIST = exports.ADD_ORDERED = undefined;
 
 var _apiCaller = __webpack_require__(13);
 
@@ -1348,7 +1338,7 @@ var delete_address = exports.delete_address = function delete_address(data) {
   };
 };
 
-var SignIn = exports.SignIn = function SignIn(data) {
+var signIn = exports.signIn = function signIn(data) {
   return function (dispatch) {
     if (data.token) {
       dispatch(GetUserInfo(data.token));
@@ -1360,9 +1350,9 @@ var SignIn = exports.SignIn = function SignIn(data) {
   };
 };
 
-var SignOut = exports.SignOut = function SignOut() {
+var signOut = exports.signOut = function signOut() {
   return function (dispatch) {
-    dispatch((0, _HomeActions.bag_clear)());
+    dispatch((0, _HomeActions.bagClear)());
     return dispatch({
       type: SIGN_OUT
     });
@@ -1382,7 +1372,7 @@ var GetUserInfo = exports.GetUserInfo = function GetUserInfo(token) {
   };
 };
 
-// export const SignIn = data => dispatch => {
+// export const signIn = data => dispatch => {
 //   // console.log("I am SIGN IN ACTION");
 //   callApi('user/login', "post", data).then((res) => {
 //     if (res.data.token === undefined || res.data.token === "")
@@ -1412,7 +1402,7 @@ var GetUserInfo = exports.GetUserInfo = function GetUserInfo(token) {
 //   });
 // };
 
-// export const SignOut = () => {
+// export const signOut = () => {
 //   return {
 //     type: SIGN_OUT
 //   };
@@ -1462,6 +1452,7 @@ var StyledButton = (0, _core.withStyles)(function (theme) {
 })(_core.Button);
 
 function DefaultButton(props) {
+  // eslint-disable-next-line react/prop-types
   var children = props.children,
       other = _objectWithoutProperties(props, ['children']);
 
@@ -1484,7 +1475,7 @@ exports.default = DefaultButton;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.change_delivery_time = exports.change_delivery_type = exports.bag_clear = exports.delete_order = exports.add_order = exports.fetch_product = exports.fetch_products = exports.fetch_branches = exports.fetch_business = exports.PICKUP = exports.DELIVERY = exports.CHANGE_DELIVERY_TYPE = exports.CHANGE_DELIVERY_TIME = exports.ORDER_BAG_CLEAR = exports.DELETE_ORDER = exports.ADD_ORDER = exports.FETCH_BUSINESS = exports.FETCH_PRODUCT = exports.FETCH_PRODUCTS = exports.FETCH_BRANCHES = undefined;
+exports.change_delivery_time = exports.change_delivery_type = exports.bagClear = exports.delete_order = exports.add_order = exports.fetch_product = exports.fetch_products = exports.fetch_branches = exports.fetch_business = exports.PICKUP = exports.DELIVERY = exports.CHANGE_DELIVERY_TYPE = exports.CHANGE_DELIVERY_TIME = exports.ORDER_BAG_CLEAR = exports.DELETE_ORDER = exports.ADD_ORDER = exports.FETCH_BUSINESS = exports.FETCH_PRODUCT = exports.FETCH_PRODUCTS = exports.FETCH_BRANCHES = undefined;
 
 var _apiCaller = __webpack_require__(13);
 
@@ -1977,7 +1968,7 @@ var delete_order = exports.delete_order = function delete_order(id) {
   };
 };
 
-var bag_clear = exports.bag_clear = function bag_clear() {
+var bagClear = exports.bagClear = function bagClear() {
   return function (dispatch) {
     dispatch({ type: ORDER_BAG_CLEAR });
   };
@@ -2106,7 +2097,7 @@ var _axios2 = _interopRequireDefault(_axios);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var API_URL = exports.API_URL = typeof window === 'undefined' || process.env.NODE_ENV === 'test' ? process.env.BASE_URL || 'http://127.0.0.1:' + (process.env.PORT || _config2.default.port) + '/api' : '/api';
+var API_URL = exports.API_URL = typeof window === 'undefined' || process.env.NODE_ENV === 'test' ? process.env.BASE_URL || 'http://0.0.0.0:' + (process.env.PORT || _config2.default.port) + '/api' : '/api';
 
 function callApi(endpoint) {
   var method = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'get';
@@ -2369,7 +2360,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _propTypes = __webpack_require__(2);
+var _propTypes = __webpack_require__(1);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
@@ -2381,52 +2372,52 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
 
-var useStyles = (0, _styles.makeStyles)(function (theme) {
+var useStyles = (0, _styles.makeStyles)(function () {
   return {
     formcontrol: {
-      width: "100%"
+      width: '100%'
     },
     underline: {
-      "&:before": {
-        borderBottom: "1px solid #8F9091",
+      '&:before': {
+        borderBottom: '1px solid #8F9091',
         opacity: 0.2
       },
-      "&:after": {
-        borderBottom: "1px solid #8F9091"
+      '&:after': {
+        borderBottom: '1px solid #8F9091'
       },
-      "&:hover:not(.Mui-disabled):before": {
-        borderBottom: "1px solid #8F9091",
+      '&:hover:not(.Mui-disabled):before': {
+        borderBottom: '1px solid #8F9091',
         opacity: 0.5
       }
     },
     formlabel: {
-      color: "white !important",
+      color: 'white !important',
       opacity: 0.3,
       fontSize: '14px'
     },
     color: {
-      color: "white",
+      color: 'white',
       opacity: 0.5
     },
     underline_inverted: {
-      "&:before": {
-        borderBottom: "1px solid #8F9091",
+      '&:before': {
+        borderBottom: '1px solid #8F9091',
         opacity: 0.2
       },
-      "&:after": {
-        borderBottom: "1px solid #8F9091"
+      '&:after': {
+        borderBottom: '1px solid #8F9091'
       },
-      "&:hover:not(.Mui-disabled):before": {
-        borderBottom: "1px solid #8F9091",
+      '&:hover:not(.Mui-disabled):before': {
+        borderBottom: '1px solid #8F9091',
         opacity: 0.5
       }
     },
     formlabel_inverted: {
-      color: "black !important",
+      color: 'black !important',
       opacity: 0.3
     },
     color_inverted: {
-      color: "black",
+      color: 'black',
       opacity: 1
     }
   };
@@ -2438,23 +2429,22 @@ function FormInput(props) {
   var id = props.id,
       label = props.label,
       inverted = props.inverted,
-      shrink = props.shrink,
-      others = _objectWithoutProperties(props, ["id", "label", "inverted", "shrink"]);
+      others = _objectWithoutProperties(props, ['id', 'label', 'inverted']);
 
   return _jsx(_core.FormControl, {
     className: classes.formcontrol
   }, void 0, _jsx(_core.InputLabel, {
-    htmlFor: props.id,
+    htmlFor: id,
     classes: {
       root: !inverted ? classes.formlabel : classes.formlabel_inverted
     },
     shrink: true
-  }, void 0, props.label), _react2.default.createElement(_core.Input, _extends({
+  }, void 0, label), _react2.default.createElement(_core.Input, _extends({
     classes: {
       underline: !inverted ? classes.underline : classes.underline_inverted,
       input: !inverted ? classes.color : classes.color_inverted
     },
-    id: props.id
+    id: id
   }, others)));
 }
 
@@ -2978,7 +2968,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _propTypes = __webpack_require__(2);
+var _propTypes = __webpack_require__(1);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
@@ -3120,11 +3110,11 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouter = __webpack_require__(5);
 
-var _clsx = __webpack_require__(1);
+var _clsx = __webpack_require__(2);
 
 var _clsx2 = _interopRequireDefault(_clsx);
 
-var _propTypes = __webpack_require__(2);
+var _propTypes = __webpack_require__(1);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
@@ -3194,19 +3184,19 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 // Import Style
 
 
-var categories = ["Popular Meals", "Breads", "Drink"];
+var categories = ['Popular Meals', 'Breads', 'Drink'];
 
 var _ref = _jsx(_reactHelmet2.default, {
-  title: "Products"
+  title: 'Products'
 });
 
-var _ref2 = _jsx("div", {}, void 0, _jsx("strong", {}, void 0, "Open"));
+var _ref2 = _jsx('div', {}, void 0, _jsx('strong', {}, void 0, 'Open'));
 
-var _ref3 = _jsx("div", {}, void 0, "450min away");
+var _ref3 = _jsx('div', {}, void 0, '450min away');
 
-var _ref4 = _jsx("p", {}, void 0, "Warning");
+var _ref4 = _jsx('p', {}, void 0, 'Warning');
 
-var _ref5 = _jsx("p", {}, void 0, "You should log in to check out First!");
+var _ref5 = _jsx('p', {}, void 0, 'You should log in to check out First!');
 
 var ProductListPage = function (_Component) {
   _inherits(ProductListPage, _Component);
@@ -3225,10 +3215,10 @@ var ProductListPage = function (_Component) {
     };
 
     _this.handleNext = function () {
-      var token = (0, _cookieRead2.default)("token");
-      if (token === "" || token === undefined) {
+      var token = (0, _cookieRead2.default)('token');
+      if (token === '' || token === undefined) {
         _this.setState({ err_show: true });
-      } else _this.props.router.push("/checkout");
+      } else _this.props.router.push('/checkout');
     };
 
     _this.handleErrDlgClose = function () {
@@ -3254,7 +3244,11 @@ var ProductListPage = function (_Component) {
     _this.handleCategory = function (c_i) {
       // this.setState({ category: cata });
       // console.log(this.Ref[cata], cata);
-      window.scrollTo({ left: 0, top: _this.Ref[categories[c_i]].offsetTop - 180, behavior: 'smooth' });
+      window.scrollTo({
+        left: 0,
+        top: _this.Ref[categories[c_i]].offsetTop - 180,
+        behavior: 'smooth'
+      });
     };
 
     _this.getRef = function (ref, index) {
@@ -3281,7 +3275,7 @@ var ProductListPage = function (_Component) {
 
 
   _createClass(ProductListPage, [{
-    key: "render",
+    key: 'render',
     value: function render() {
       var _this2 = this;
 
@@ -3295,38 +3289,40 @@ var ProductListPage = function (_Component) {
           branch = _props.branch,
           products = _props.products,
           order_bag = _props.order_bag,
-          sub_total = _props.sub_total,
+          subTotal = _props.subTotal,
           addons = _props.addons;
 
 
-      return _jsx(_react2.default.Fragment, {}, void 0, _ref, _jsx("div", {
-        className: _ProductListPage2.default["container-head"]
-      }), _jsx("div", {
-        className: _ProductListPage2.default["container-body"]
-      }, void 0, _jsx("div", {
-        className: (0, _clsx2.default)(_ProductListPage2.default["header"], _ProductListPage2.default["wrapper"])
-      }, void 0, _jsx("div", {
-        className: _ProductListPage2.default["logo"],
+      console.log(branch);
+
+      return _jsx(_react2.default.Fragment, {}, void 0, _ref, _jsx('div', {
+        className: _ProductListPage2.default['container-head']
+      }), _jsx('div', {
+        className: _ProductListPage2.default['container-body']
+      }, void 0, _jsx('div', {
+        className: (0, _clsx2.default)(_ProductListPage2.default['header'], _ProductListPage2.default['wrapper'])
+      }, void 0, _jsx('div', {
+        className: _ProductListPage2.default['logo'],
         style: {
-          backgroundImage: "url(" + business.logoUrl + ")"
+          backgroundImage: 'url(' + (branch.photoUrl || business.logoUrl) + ')'
         }
-      }), _jsx("div", {
-        className: _ProductListPage2.default["info"]
-      }, void 0, _jsx("div", {
-        className: _ProductListPage2.default["title"]
-      }, void 0, branch.name || business.name, _jsx("button", {
-        className: _ProductListPage2.default["moreinfo"]
-      }, void 0, (0, _icons.info)())), _jsx("div", {
-        className: _ProductListPage2.default["state"]
-      }, void 0, _ref2, _jsx("div", {}, void 0, " \u2219 ", branch.address || business.name, ", "), _ref3))), _jsx("div", {
-        className: _ProductListPage2.default["category-menu"]
+      }), _jsx('div', {
+        className: _ProductListPage2.default['info']
+      }, void 0, _jsx('div', {
+        className: _ProductListPage2.default['title']
+      }, void 0, branch.name || business.name, _jsx('button', {
+        className: _ProductListPage2.default['moreinfo']
+      }, void 0, (0, _icons.info)())), _jsx('div', {
+        className: _ProductListPage2.default['state']
+      }, void 0, _ref2, _jsx('div', {}, void 0, ' \u2219 ', branch.address || business.name, ', '), _ref3))), _jsx('div', {
+        className: _ProductListPage2.default['category-menu']
       }, void 0, _jsx(_CategoryMenu2.default, {
         categories: categories,
         onCategoryChange: this.handleCategory
-      })), _jsx("div", {
-        className: (0, _clsx2.default)(_ProductListPage2.default["content"], _ProductListPage2.default["wrapper"])
-      }, void 0, _jsx("div", {
-        className: _ProductListPage2.default["products"]
+      })), _jsx('div', {
+        className: (0, _clsx2.default)(_ProductListPage2.default['content'], _ProductListPage2.default['wrapper'])
+      }, void 0, _jsx('div', {
+        className: _ProductListPage2.default['products']
       }, void 0, categories.map(function (cat, index) {
         return _jsx(_ProductList2.default, {
           products: products.filter(function (product) {
@@ -3348,10 +3344,10 @@ var ProductListPage = function (_Component) {
           handleOpen: _this2.handleOpen
         }, index);
       })), _jsx(_OrderCard2.default, {
-        className: _ProductListPage2.default["order"],
+        className: _ProductListPage2.default['order'],
         ordered: order_bag,
         business: business,
-        sub_total: sub_total,
+        subTotal: subTotal,
         onDelete: this.handleDelete,
         onNext: this.handleNext,
         onClose: this.handleHide,
@@ -3367,13 +3363,13 @@ var ProductListPage = function (_Component) {
       }), _jsx(_core.Modal, {
         open: this.state.err_show,
         onClose: this.handleErrDlgClose,
-        "aria-labelledby": "modal-errcheckout"
-      }, void 0, _jsx("div", {
+        'aria-labelledby': 'modal-errcheckout'
+      }, void 0, _jsx('div', {
         className: _ProductListPage2.default['modal-container']
-      }, void 0, _jsx("div", {
+      }, void 0, _jsx('div', {
         onClick: this.handleErrDlgClose,
-        className: _ProductListPage2.default["btn-close"]
-      }, void 0, (0, _icons.close_dlg)()), _ref4, _ref5)));
+        className: _ProductListPage2.default['btn-close']
+      }, void 0, (0, _icons.closeDlgIcon)()), _ref4, _ref5)));
     }
   }]);
 
@@ -3384,9 +3380,9 @@ var ProductListPage = function (_Component) {
 
 
 function mapStateToProps(state, props) {
-  var sub_total = 0;
+  var subTotal = 0;
   state.order_bag.forEach(function (order) {
-    sub_total += order.price;
+    subTotal += order.price;
   });
 
   return {
@@ -3394,7 +3390,7 @@ function mapStateToProps(state, props) {
     products: state.home.products.products,
     addons: state.home.products.addons,
     order_bag: state.order_bag,
-    sub_total: sub_total,
+    subTotal: subTotal,
     business: state.home.business
   };
 }
@@ -3420,6 +3416,10 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _propTypes = __webpack_require__(1);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
 var _core = __webpack_require__(3);
 
 var _DefaultButton = __webpack_require__(8);
@@ -3441,7 +3441,7 @@ var _TimeModal2 = _interopRequireDefault(_TimeModal);
 
 var _icons = __webpack_require__(4);
 
-var _clsx = __webpack_require__(1);
+var _clsx = __webpack_require__(2);
 
 var _clsx2 = _interopRequireDefault(_clsx);
 
@@ -3464,6 +3464,30 @@ var TimeModal = function (_React$Component) {
     _classCallCheck(this, TimeModal);
 
     var _this = _possibleConstructorReturn(this, (TimeModal.__proto__ || Object.getPrototypeOf(TimeModal)).call(this, props));
+
+    _this.initialState = function () {
+      var i = 0;
+      var j = 0;
+      var arTime = [];
+      var _this$props = _this.props,
+          type = _this$props.type,
+          time = _this$props.time,
+          date = _this$props.date;
+      // console.log(type, time, date);
+
+      for (i = 0; i < 24; i++) {
+        for (j = 0; j < 60; j += 10) {
+          var min = j;
+          var hr = i;
+
+          if (i > 0 && i < 10) hr = '0' + i;
+          if (j === 0) min = j + '0';
+          arTime[i * 6 + j / 10] = hr + ':' + min;
+        }
+      }
+      // console.log(this.props);
+      _this.setState({ type: type, time: time, date: date, arTime: arTime });
+    };
 
     _this.handleSubmit = function (event) {
       event.preventDefault();
@@ -3489,7 +3513,7 @@ var TimeModal = function (_React$Component) {
     };
 
     _this.state = {
-      ar_time: []
+      arTime: []
     };
     return _this;
   }
@@ -3497,38 +3521,19 @@ var TimeModal = function (_React$Component) {
   _createClass(TimeModal, [{
     key: 'componentDidMount',
     value: function componentDidMount() {
-      var i = void 0,
-          j = void 0;
-      var ar_time = [];
-      var _props = this.props,
-          type = _props.type,
-          time = _props.time,
-          date = _props.date;
-      // console.log(type, time, date);
-
-      for (i = 0; i < 24; i++) {
-        for (j = 0; j < 60; j += 10) {
-          var min = j,
-              hr = i;
-          if (i > 0 && i < 10) hr = '0' + i;
-          if (j === 0) min = j + '0';
-          ar_time[i * 6 + j / 10] = hr + ':' + min;
-        }
-      }
-      // console.log(this.props);
-      this.setState({ type: type, time: time, date: date, ar_time: ar_time });
+      this.initialState();
     }
   }, {
     key: 'render',
     value: function render() {
       var _this2 = this;
 
-      var _props2 = this.props,
-          openTime = _props2.openTime,
-          handleClose = _props2.handleClose;
+      var _props = this.props,
+          openTime = _props.openTime,
+          handleClose = _props.handleClose;
       var _state = this.state,
           type = _state.type,
-          ar_time = _state.ar_time,
+          arTime = _state.arTime,
           time = _state.time,
           date = _state.date;
 
@@ -3541,7 +3546,7 @@ var TimeModal = function (_React$Component) {
       }, void 0, _jsx('div', {
         onClick: handleClose,
         className: _TimeModal2.default['btn-close']
-      }, void 0, (0, _icons.close_dlg)()), _jsx('form', {
+      }, void 0, (0, _icons.closeDlgIcon)()), _jsx('form', {
         className: _TimeModal2.default['child-container'],
         onSubmit: this.handleSubmit
       }, void 0, _ref, _ref2, _jsx('div', {
@@ -3573,10 +3578,10 @@ var TimeModal = function (_React$Component) {
         },
         required: true,
         value: time
-      }, void 0, ar_time.map(function (time, id) {
+      }, void 0, arTime.map(function (t, id) {
         return _jsx('option', {
-          value: '' + time
-        }, id, time);
+          value: '' + t
+        }, id, t);
       }))), _jsx(_DefaultButton2.default, {
         className: _TimeModal2.default['btn-save'],
         type: 'submit'
@@ -3612,11 +3617,11 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouter = __webpack_require__(5);
 
-var _clsx = __webpack_require__(1);
+var _clsx = __webpack_require__(2);
 
 var _clsx2 = _interopRequireDefault(_clsx);
 
-var _propTypes = __webpack_require__(2);
+var _propTypes = __webpack_require__(1);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
@@ -3775,7 +3780,7 @@ var CheckoutPage = function (_Component) {
         _this.setState({
           delivery_address: {
             street: {
-              seperate_address: [],
+              seperateAddress: [],
               location: {
                 lat: 0.0,
                 lng: 0.0
@@ -4040,7 +4045,7 @@ var CheckoutPage = function (_Component) {
             lng: 0.0
           },
           address: "",
-          seperate_address: [],
+          seperateAddress: [],
           postalCode: ""
         },
         flatNo: "",
@@ -4079,7 +4084,7 @@ var CheckoutPage = function (_Component) {
           branch = _props.branch,
           accounts = _props.accounts,
           order_bag = _props.order_bag,
-          sub_total = _props.sub_total,
+          subTotal = _props.subTotal,
           delivery_data = _props.delivery_data;
 
       var desc_time = void 0;
@@ -4232,14 +4237,14 @@ var CheckoutPage = function (_Component) {
       }, void 0, (0, _icons.plus)()), "Add Credit Card")), _jsx(_DefaultButton2.default, {
         className: _CheckoutPage2.default["confirm-btn"],
         type: "submit"
-      }, void 0, _ref4, _jsx("span", {}, void 0, business.currency.symbol, ((delivery_data.type === _HomeActions.DELIVERY ? delivery_data.fee : 0) + sub_total).toFixed(2), _jsx("span", {
+      }, void 0, _ref4, _jsx("span", {}, void 0, business.currency.symbol, ((delivery_data.type === _HomeActions.DELIVERY ? delivery_data.fee : 0) + subTotal).toFixed(2), _jsx("span", {
         className: "ml-3"
       }, void 0, (0, _icons.next3)())))), _jsx("div", {
         className: _CheckoutPage2.default["order"]
       }, void 0, _jsx(_OrderSummary2.default, {
         ordered: order_bag,
         business: business,
-        sub_total: sub_total,
+        subTotal: subTotal,
         onClose: this.handleHide,
         show: show,
         header: "Your Order Total"
@@ -4249,7 +4254,7 @@ var CheckoutPage = function (_Component) {
         onClick: this.handleShow
       }, void 0, _jsx("span", {}, void 0, _jsx("span", {
         className: "mr-3"
-      }, void 0, (0, _icons.shopping_bag)()), _ref5), _jsx("span", {}, void 0, business.currency.symbol, ((delivery_data.type === _HomeActions.DELIVERY ? delivery_data.fee : 0) + sub_total).toFixed(2)))))), _jsx(_CCModal2.default, {
+      }, void 0, (0, _icons.shoppingBag)()), _ref5), _jsx("span", {}, void 0, business.currency.symbol, ((delivery_data.type === _HomeActions.DELIVERY ? delivery_data.fee : 0) + subTotal).toFixed(2)))))), _jsx(_CCModal2.default, {
         open: add_open,
         onClose: this.handleCloseCC,
         onSubmit: this.handleSubmitCC
@@ -4273,15 +4278,15 @@ var CheckoutPage = function (_Component) {
 
 // Retrieve data from store as props
 function mapStateToProps(state, props) {
-  var sub_total = 0;
+  var subTotal = 0;
   state.order_bag.forEach(function (order) {
-    sub_total += order.price;
+    subTotal += order.price;
   });
 
   return {
     branch: state.app.branch,
     order_bag: state.order_bag,
-    sub_total: sub_total,
+    subTotal: subTotal,
     delivery_data: state.delivery,
     business: state.home.business,
     accounts: state.accounts
@@ -4313,11 +4318,11 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRedux = __webpack_require__(6);
 
-var _clsx = __webpack_require__(1);
+var _clsx = __webpack_require__(2);
 
 var _clsx2 = _interopRequireDefault(_clsx);
 
-var _propTypes = __webpack_require__(2);
+var _propTypes = __webpack_require__(1);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
@@ -4358,10 +4363,10 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-//import Components
+// import Components
 
 
-//import Styles
+// import Styles
 
 
 var _ref = _jsx("span", {}, void 0, "Subtotal");
@@ -4389,14 +4394,14 @@ var OrderSummary = function (_React$Component) {
           show = _props.show,
           ordered = _props.ordered,
           business = _props.business,
-          sub_total = _props.sub_total,
+          subTotal = _props.subTotal,
           delivery_data = _props.delivery_data,
           header = _props.header,
           payment = _props.payment,
           onClose = _props.onClose,
           dispatch = _props.dispatch,
           onOpen = _props.onOpen,
-          other = _objectWithoutProperties(_props, ["className", "show", "ordered", "business", "sub_total", "delivery_data", "header", "payment", "onClose", "dispatch", "onOpen"]);
+          other = _objectWithoutProperties(_props, ["className", "show", "ordered", "business", "subTotal", "delivery_data", "header", "payment", "onClose", "dispatch", "onOpen"]);
 
       return _jsx("div", {
         className: (0, _clsx2.default)(_OrderSummary2.default["order"], className ? className : "", show === false ? _OrderSummary2.default["hidden-wrapper"] : "")
@@ -4416,7 +4421,7 @@ var OrderSummary = function (_React$Component) {
           classes: { root: _OrderSummary2.default["close"] },
           "aria-label": "Close",
           onClick: onClose
-        }, void 0, (0, _icons.close_dlg)())), _jsx("div", {
+        }, void 0, (0, _icons.closeDlgIcon)())), _jsx("div", {
           className: _OrderSummary2.default["products"]
         }, void 0, ordered && ordered.map(function (order, index) {
           return _jsx("div", {
@@ -4426,11 +4431,11 @@ var OrderSummary = function (_React$Component) {
           }, void 0, order.variantName)), _jsx("div", {}, void 0, business.currency.symbol, order.price.toFixed(2)));
         })), _jsx("div", {
           className: _OrderSummary2.default["flexview"]
-        }, void 0, _ref, _jsx("span", {}, void 0, business.currency.symbol, sub_total.toFixed(2))), _jsx("div", {
+        }, void 0, _ref, _jsx("span", {}, void 0, business.currency.symbol, subTotal.toFixed(2))), _jsx("div", {
           className: _OrderSummary2.default["flexview"]
         }, void 0, _ref2, _jsx("span", {}, void 0, business.currency.symbol, delivery_data.type === _HomeActions.DELIVERY ? delivery_data.fee.toFixed(2) : "0.00")), _jsx("div", {
           className: (0, _clsx2.default)(_OrderSummary2.default["flexview"], _OrderSummary2.default["total"])
-        }, void 0, _ref3, _jsx("span", {}, void 0, business.currency.symbol, ((delivery_data.type === _HomeActions.DELIVERY ? delivery_data.fee : 0) + sub_total).toFixed(2))), _jsx("div", {
+        }, void 0, _ref3, _jsx("span", {}, void 0, business.currency.symbol, ((delivery_data.type === _HomeActions.DELIVERY ? delivery_data.fee : 0) + subTotal).toFixed(2))), _jsx("div", {
           className: (0, _clsx2.default)(_OrderSummary2.default["flexview"], _OrderSummary2.default["payment"]),
           style: { display: payment === undefined ? "none" : "flex" }
         }, void 0, _ref4, _jsx("span", {}, void 0, _jsx("span", {}, void 0, "***", payment), _jsx("span", {
@@ -4473,9 +4478,9 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _clsx = __webpack_require__(1);
+var _propTypes = __webpack_require__(1);
 
-var _clsx2 = _interopRequireDefault(_clsx);
+var _propTypes2 = _interopRequireDefault(_propTypes);
 
 var _reactPlacesAutocomplete = __webpack_require__(103);
 
@@ -4524,22 +4529,22 @@ var LocationSearchInput = function (_React$Component) {
         if (results[0].address_components.length < 2) {
           return;
         }
-        var last_obj = results[0].address_components[results[0].address_components.length - 1];
-        var last_sec_obj = results[0].address_components[results[0].address_components.length - 2];
+        var lastObj = results[0].address_components[results[0].address_components.length - 1];
+        var lastSecObj = results[0].address_components[results[0].address_components.length - 2];
         var obj = { postalCode: '' };
-        if (last_obj.types[0] === 'postal_code') {
+        if (lastObj.types[0] === 'postal_code') {
           obj = {
-            postalCode: last_obj.short_name
+            postalCode: lastObj.short_name
           };
           results[0].address_components.pop();
-        } else if (last_sec_obj.types[0] === 'postal_code') {
+        } else if (lastSecObj.types[0] === 'postal_code') {
           obj = {
-            postalCode: last_sec_obj.short_name
+            postalCode: lastSecObj.short_name
           };
           results[0].address_components.pop();
           results[0].address_components.pop();
         }
-        var seperate_address = {
+        var seperateAddress = {
           countryCode: '',
           state: '',
           city: '',
@@ -4550,35 +4555,35 @@ var LocationSearchInput = function (_React$Component) {
           return addr.types[0] === 'administrative_area_level_1';
         });
         if (temp.length === 1) {
-          seperate_address.state = temp[0].short_name;
+          seperateAddress.state = temp[0].short_name;
         }
         temp = results[0].address_components.filter(function (addr) {
           return addr.types[0] === 'locality';
         });
         if (temp.length === 1) {
-          seperate_address.city = temp[0].long_name;
+          seperateAddress.city = temp[0].long_name;
         }
         temp = results[0].address_components.filter(function (addr) {
           return addr.types[0] === 'route';
         });
         if (temp.length === 1) {
-          seperate_address.streetLine1 = temp[0].long_name;
+          seperateAddress.streetLine1 = temp[0].long_name;
         }
         temp = results[0].address_components.filter(function (addr) {
           return addr.types[0] === 'country';
         });
         if (temp.length === 1) {
-          seperate_address.countryCode = temp[0].short_name;
+          seperateAddress.countryCode = temp[0].short_name;
         }
         obj = _extends({
           address: address,
-          seperate_address: seperate_address,
+          seperateAddress: seperateAddress,
           location: location
         }, obj);
         _this.props.onSelect(obj);
         _this.setState({ address: address });
       }).catch(function (error) {
-        // console.log("can't find place", error)
+        console.log("can't find place", error);
       });
     };
 
@@ -4612,21 +4617,18 @@ var LocationSearchInput = function (_React$Component) {
           placeholder: 'Search Places ...',
           className: className
         }), {
-          required: required
+          required: !!required
         })), _jsx('div', {
           className: _LocationSearchInput2.default['autocomplete-dropdown-container'],
           style: {
             display: loading || suggestions.length > 0 ? 'block' : 'none'
           }
         }, void 0, loading && _ref3, suggestions.map(function (suggestion) {
-          var className = suggestion.active ? _LocationSearchInput2.default['suggestion-item--active'] : _LocationSearchInput2.default['suggestion-item'];
-          // inline style for demonstration purpose
-          var style = suggestion.active ? { backgroundColor: '#fafafa', cursor: 'pointer' } : { backgroundColor: '#ffffff', cursor: 'pointer' };
           return _react2.default.createElement(
             'div',
             getSuggestionItemProps(suggestion, {
-              className: className,
-              style: style
+              className: suggestion.active ? _LocationSearchInput2.default['suggestion-item--active'] : _LocationSearchInput2.default['suggestion-item'],
+              style: suggestion.active ? { backgroundColor: '#fafafa', cursor: 'pointer' } : { backgroundColor: '#ffffff', cursor: 'pointer' }
             }),
             _jsx('span', {}, void 0, suggestion.description)
           );
@@ -4659,7 +4661,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _clsx = __webpack_require__(1);
+var _clsx = __webpack_require__(2);
 
 var _clsx2 = _interopRequireDefault(_clsx);
 
@@ -4688,7 +4690,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-//import Styles
+// import Styles
 
 
 var PayForm = function (_React$Component) {
@@ -4771,13 +4773,9 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _propTypes = __webpack_require__(2);
+var _propTypes = __webpack_require__(1);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
-
-var _clsx = __webpack_require__(1);
-
-var _clsx2 = _interopRequireDefault(_clsx);
 
 var _core = __webpack_require__(3);
 
@@ -4789,7 +4787,11 @@ var _reactCreditCards = __webpack_require__(104);
 
 var _reactCreditCards2 = _interopRequireDefault(_reactCreditCards);
 
-var _utils = __webpack_require__(105);
+var _cardValidator = __webpack_require__(105);
+
+var _cardValidator2 = _interopRequireDefault(_cardValidator);
+
+var _utils = __webpack_require__(106);
 
 var _icons = __webpack_require__(4);
 
@@ -4800,7 +4802,7 @@ var _FormInput2 = _interopRequireDefault(_FormInput);
 var _CCModal = {
   "modal-wrapper": "_3LYml3lbcDMllAvot63t9q",
   "PayModal": "_2WKx4u_q7e1eTYk4QxivL4",
-  "err_card": "m_eKNnDA-ADCTUtDN4T1U",
+  "errCard": "_3fp6NBp4BHvzlgry8FwIjl",
   "captain": "_2G9URxvNgCiF6XcuWnOrIc"
 };
 
@@ -4828,8 +4830,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 // import Styles
 
 
-var err_msg = ['Unknown Credit Card', 'Creadit Card Number is Invalid'];
-var valid = __webpack_require__(107);
+var errMsg = ['Unknown Credit Card', 'Creadit Card Number is Invalid'];
 
 var _ref4 = _jsx('div', {
   className: 'mx-auto'
@@ -4844,12 +4845,23 @@ var _ref5 = _jsx('div', {
 var CCModal = function (_React$Component) {
   _inherits(CCModal, _React$Component);
 
+  _createClass(CCModal, null, [{
+    key: 'getDerivedStateFromProps',
+    value: function getDerivedStateFromProps(nextProps) {
+      if (nextProps.editdata !== null) {
+        this.setState(_extends({}, this.initialState(), nextProps.editdata));
+      } else {
+        this.setState(this.initialState());
+      }
+    }
+  }]);
+
   function CCModal(props) {
     _classCallCheck(this, CCModal);
 
     var _this = _possibleConstructorReturn(this, (CCModal.__proto__ || Object.getPrototypeOf(CCModal)).call(this, props));
 
-    _this.initial_state = function () {
+    _this.initialState = function () {
       return {
         number: '',
         name: '',
@@ -4858,17 +4870,17 @@ var CCModal = function (_React$Component) {
         issuer: '',
         focused: '',
         formData: null,
-        err_card: -1,
-        err_expiry: false,
-        err_cvv: false,
-        isvalid_card: ''
+        errCard: -1,
+        errExpiry: false,
+        errCvv: false,
+        isValidCard: ''
       };
     };
 
     _this.handleCallback = function (_ref, isValid) {
       var issuer = _ref.issuer;
 
-      _this.setState({ issuer: issuer, isvalid_card: isValid });
+      _this.setState({ issuer: issuer, isValidCard: isValid });
     };
 
     _this.handleInputFocus = function (_ref2) {
@@ -4881,34 +4893,36 @@ var CCModal = function (_React$Component) {
 
     _this.handleInputChange = function (_ref3) {
       var target = _ref3.target;
+      var number = _this.state.number;
 
+      var value = '';
       if (target.name === 'number') {
-        target.value = (0, _utils.formatCreditCardNumber)(target.value);
+        value = (0, _utils.formatCreditCardNumber)(target.value);
       } else if (target.name === 'expiry') {
-        target.value = (0, _utils.formatExpirationDate)(target.value);
+        value = (0, _utils.formatExpirationDate)(target.value);
       } else if (target.name === 'cvv') {
-        target.value = (0, _utils.formatCVC)(target.value, number);
+        value = (0, _utils.formatCVC)(target.value, number);
       }
 
-      _this.setState(_defineProperty({}, target.name, target.value));
+      _this.setState(_defineProperty({}, target.name, value));
     };
 
     _this.handleSubmit = function (e) {
       e.preventDefault();
       var _this$state = _this.state,
           issuer = _this$state.issuer,
-          isvalid_card = _this$state.isvalid_card,
+          isValidCard = _this$state.isValidCard,
           expiry = _this$state.expiry,
           cvv = _this$state.cvv;
 
-      var err_card = void 0,
-          err_expiry = void 0,
-          err_cvv = void 0;
+      var errCard = 0;
+      var errExpiry = false;
+      var errCvv = false;
 
-      if (issuer === 'unknown') err_card = 0;else if (isvalid_card === false) err_card = 1;else err_card = -1;
-      if (!valid.expirationDate(expiry).isValid) err_expiry = true;
-      if (!valid.cvv(cvv).isValid) err_cvv = true;
-      _this.setState({ err_card: err_card, err_expiry: err_expiry, err_cvv: err_cvv });
+      if (issuer === 'unknown') errCard = 0;else if (isValidCard === false) errCard = 1;else errCard = -1;
+      if (!_cardValidator2.default.expirationDate(expiry).isValid) errExpiry = true;
+      if (!_cardValidator2.default.cvv(cvv).isValid) errCvv = true;
+      _this.setState({ errCard: errCard, errExpiry: errExpiry, errCvv: errCvv });
       /**
         Visa Card number:   4305996444435906
         Name:               Michael Brown
@@ -4918,32 +4932,22 @@ var CCModal = function (_React$Component) {
         Limit:              2027$
         Exp:                07/20
         */
-      if (err_card === -1 && !err_expiry && !err_cvv) {
+      if (errCard === -1 && !errExpiry && !errCvv) {
         var formData = [].concat(_toConsumableArray(e.target.elements)).filter(function (d) {
           return d.name;
         }).reduce(function (acc, d) {
-          acc[d.name] = d.value;
-          return acc;
+          return _extends({}, acc, _defineProperty({}, d.name, d.value));
         }, {});
         _this.props.onSubmit(formData);
         _this.form.reset();
       }
     };
 
-    _this.state = _this.initial_state();
+    _this.state = _this.initialState();
     return _this;
   }
 
   _createClass(CCModal, [{
-    key: 'componentWillReceiveProps',
-    value: function componentWillReceiveProps(nextProps) {
-      if (nextProps.editdata !== null) {
-        this.setState(_extends({}, this.initial_state(), nextProps.editdata));
-      } else {
-        this.setState(this.initial_state());
-      }
-    }
-  }, {
     key: 'render',
     value: function render() {
       var _this2 = this;
@@ -4959,9 +4963,9 @@ var CCModal = function (_React$Component) {
           cvv = _state.cvv,
           focused = _state.focused,
           issuer = _state.issuer,
-          err_card = _state.err_card,
-          err_expiry = _state.err_expiry,
-          err_cvv = _state.err_cvv;
+          errCard = _state.errCard,
+          errExpiry = _state.errExpiry,
+          errCvv = _state.errCvv;
 
 
       return _jsx(_core.Modal, {
@@ -4977,7 +4981,7 @@ var CCModal = function (_React$Component) {
       }, void 0, _ref4, _jsx('div', {
         onClick: onClose,
         style: { cursor: 'pointer' }
-      }, void 0, (0, _icons.close_dlg)())), _jsx('div', {
+      }, void 0, (0, _icons.closeDlgIcon)())), _jsx('div', {
         className: 'd-flex align-items-stretch flex-column'
       }, void 0, _jsx('div', {
         className: 'App-payment'
@@ -5007,7 +5011,7 @@ var CCModal = function (_React$Component) {
           className: 'mb-3',
           pattern: '[\\d| ]{16,22}',
           required: true,
-          readOnly: editdata ? true : false,
+          readOnly: !!editdata,
           value: number,
           onChange: this.handleInputChange,
           onFocus: this.handleInputFocus,
@@ -5019,9 +5023,9 @@ var CCModal = function (_React$Component) {
             id: issuer,
             style: { margin: 10, width: 24 }
           }))
-        }), err_card >= 0 && _jsx('p', {
-          className: _CCModal2.default['err_card']
-        }, void 0, err_msg[err_card])),
+        }), errCard >= 0 && _jsx('p', {
+          className: _CCModal2.default['errCard']
+        }, void 0, errMsg[errCard])),
         _jsx('div', {
           className: 'form-group'
         }, void 0, _jsx(_FormInput2.default, {
@@ -5054,8 +5058,8 @@ var CCModal = function (_React$Component) {
           onChange: this.handleInputChange,
           onFocus: this.handleInputFocus,
           label: 'Valid Date'
-        }), err_expiry && _jsx('p', {
-          className: _CCModal2.default['err_card']
+        }), errExpiry && _jsx('p', {
+          className: _CCModal2.default['errCard']
         }, void 0, 'Invalid Date')), _jsx('div', {
           className: 'col-6'
         }, void 0, _jsx(_FormInput2.default, {
@@ -5064,7 +5068,7 @@ var CCModal = function (_React$Component) {
           type: 'text',
           id: 'cvv',
           name: 'cvv',
-          readOnly: editdata ? true : false,
+          readOnly: !!editdata,
           className: 'mb-3',
           pattern: '\\d{3,4}',
           required: true,
@@ -5072,8 +5076,8 @@ var CCModal = function (_React$Component) {
           onChange: this.handleInputChange,
           onFocus: this.handleInputFocus,
           label: 'CVV Code'
-        }), err_cvv && _jsx('p', {
-          className: _CCModal2.default['err_card']
+        }), errCvv && _jsx('p', {
+          className: _CCModal2.default['errCard']
         }, void 0, 'Invalid CVV Code'))),
         _jsx('input', {
           type: 'hidden',
@@ -5109,11 +5113,11 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _clsx = __webpack_require__(1);
+var _clsx = __webpack_require__(2);
 
 var _clsx2 = _interopRequireDefault(_clsx);
 
-var _propTypes = __webpack_require__(2);
+var _propTypes = __webpack_require__(1);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
@@ -5216,7 +5220,7 @@ var ProfilePage = function (_Component) {
     };
 
     _this.handleSignout = function () {
-      _this.props.dispatch((0, _ProfileActions.SignOut)());
+      _this.props.dispatch((0, _ProfileActions.signOut)());
     };
 
     _this.renderDrop = function () {
@@ -5224,7 +5228,7 @@ var ProfilePage = function (_Component) {
         className: _ProfilePage2.default["render-drop"]
       }, void 0, _jsx("div", {
         className: _ProfilePage2.default["icon"]
-      }, void 0, (0, _icons.account)()), " Profile");
+      }, void 0, (0, _icons.accountIcon)()), " Profile");
       if (_this.state.dropId === 2) return _jsx("div", {
         className: _ProfilePage2.default["render-drop"]
       }, void 0, _jsx("div", {
@@ -5244,7 +5248,7 @@ var ProfilePage = function (_Component) {
         className: _ProfilePage2.default["render-drop"]
       }, void 0, _jsx("div", {
         className: _ProfilePage2.default["icon"]
-      }, void 0, (0, _icons.account)()), "Address");
+      }, void 0, (0, _icons.accountIcon)()), "Address");
     };
 
     _this.state = {
@@ -5300,7 +5304,7 @@ var ProfilePage = function (_Component) {
         className: (0, _clsx2.default)(_ProfilePage2.default["RLink"], this.activeRoute("/profile"))
       }, void 0, _jsx("div", {
         className: _ProfilePage2.default["icon"]
-      }, void 0, (0, _icons.account)()), "Profile"))), _jsx("li", {
+      }, void 0, (0, _icons.accountIcon)()), "Profile"))), _jsx("li", {
         onClick: function onClick() {
           return _this2.handleDropDown(false);
         }
@@ -5340,7 +5344,7 @@ var ProfilePage = function (_Component) {
         className: (0, _clsx2.default)(_ProfilePage2.default["RLink"], this.activeRoute("/profile/address"))
       }, void 0, _jsx("div", {
         className: _ProfilePage2.default["icon"]
-      }, void 0, (0, _icons.account)()), "Address"))), _jsx("li", {
+      }, void 0, (0, _icons.accountIcon)()), "Address"))), _jsx("li", {
         onClick: function onClick() {
           return _this2.handleDropDown(false);
         }
@@ -5455,10 +5459,10 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-//import Component
+// import Component
 
 
-//import Styles
+// import Styles
 
 
 var StyledButton = (0, _core.withStyles)(function (theme) {
@@ -5599,7 +5603,7 @@ var Account = function (_React$Component) {
         className: "d-flex"
       }, void 0, _jsx("div", {
         className: _Account2.default["avatar"]
-      }, void 0, (0, _icons.account_xl)(), _jsx("p", {
+      }, void 0, (0, _icons.accountXL)(), _jsx("p", {
         className: _Account2.default["changeimage"]
       }, void 0, "Change", _ref, "Image")), _jsx("div", {
         className: _Account2.default["nameinput"]
@@ -5666,7 +5670,7 @@ var Account = function (_React$Component) {
       }, void 0, _jsx("div", {
         onClick: this.onHideModal,
         className: _Account2.default["btn-close"]
-      }, void 0, (0, _icons.close_dlg)()), _jsx("p", {
+      }, void 0, (0, _icons.closeDlgIcon)()), _jsx("p", {
         className: _Account2.default["mTitle"]
       }, void 0, "Change Password"), _jsx("div", {
         className: _Account2.default["form-container"]
@@ -5875,11 +5879,11 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _clsx = __webpack_require__(1);
+var _clsx = __webpack_require__(2);
 
 var _clsx2 = _interopRequireDefault(_clsx);
 
-var _propTypes = __webpack_require__(2);
+var _propTypes = __webpack_require__(1);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
@@ -5909,10 +5913,10 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-//import Component
+// import Component
 
 
-//import Styles
+// import Styles
 
 
 var OrderHistory = function (_React$Component) {
@@ -6070,10 +6074,10 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-//import Component
+// import Component
 
 
-//import Styles
+// import Styles
 
 
 var PaymentMethods = function (_React$Component) {
@@ -6234,10 +6238,10 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-//import Component
+// import Component
 
 
-//import Styles
+// import Styles
 
 
 var Settings = function (_React$Component) {
@@ -6324,7 +6328,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _clsx = __webpack_require__(1);
+var _clsx = __webpack_require__(2);
 
 var _clsx2 = _interopRequireDefault(_clsx);
 
@@ -6375,13 +6379,13 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-//import Component
+// import Component
 
 
-//import Actions
+// import Actions
 
 
-//import Styles
+// import Styles
 
 
 var GreyButton = (0, _core.withStyles)(function (theme) {
@@ -6498,7 +6502,7 @@ var Address = function (_React$Component) {
           id: "",
           type: "",
           street: {
-            seperate_address: [],
+            seperateAddress: [],
             location: {
               lat: 0.0,
               lng: 0.0
@@ -6523,7 +6527,7 @@ var Address = function (_React$Component) {
         id: "",
         type: "",
         street: {
-          seperate_address: [],
+          seperateAddress: [],
           location: {
             lat: 0.0,
             lng: 0.0
@@ -6703,7 +6707,7 @@ var _reactRouter = __webpack_require__(5);
 
 var _icons = __webpack_require__(4);
 
-var _clsx = __webpack_require__(1);
+var _clsx = __webpack_require__(2);
 
 var _clsx2 = _interopRequireDefault(_clsx);
 
@@ -6756,7 +6760,7 @@ var OrderStatusPage = function (_React$Component) {
       var _props = this.props,
           business = _props.business,
           order_state = _props.order_state,
-          sub_total = _props.sub_total;
+          subTotal = _props.subTotal;
 
 
       if (order_state.order_bag.length <= 0) this.props.router.push("/");
@@ -6770,7 +6774,7 @@ var OrderStatusPage = function (_React$Component) {
         className: _OrderStatusPage2.default["order"],
         ordered: order_state.order_bag,
         business: business,
-        sub_total: sub_total,
+        subTotal: subTotal,
         onClose: this.handleHide,
         payment: 3456,
         show: show,
@@ -6781,14 +6785,14 @@ var OrderStatusPage = function (_React$Component) {
         className: (0, _clsx2.default)("row", _OrderStatusPage2.default["order-container"])
       }, void 0, _jsx("div", {
         className: (0, _clsx2.default)("col-md-7", _OrderStatusPage2.default["way-layout"])
-      }, void 0, (0, _icons.gauge)(), _jsx("div", {
+      }, void 0, (0, _icons.gaugeIcon)(), _jsx("div", {
         className: _OrderStatusPage2.default["order-layout"]
       }, void 0, _ref, _ref2)), _jsx("div", {
         className: _OrderStatusPage2.default["btn-detail"],
         onClick: this.handleShow
       }, void 0, "See Order Details"), _jsx("div", {
         className: (0, _clsx2.default)("col-md-5", "d-flex", _OrderStatusPage2.default["message-layout"])
-      }, void 0, (0, _icons.messaging)(), _ref3))));
+      }, void 0, (0, _icons.messagingIcon)(), _ref3))));
     }
   }]);
 
@@ -6796,15 +6800,15 @@ var OrderStatusPage = function (_React$Component) {
 }(_react2.default.Component);
 
 function mapStateToProps(state) {
-  var sub_total = 0;
+  var subTotal = 0;
   state.order_state.order_bag.forEach(function (order) {
-    sub_total += order.price;
+    subTotal += order.price;
   });
 
   return {
     business: state.home.business,
     order_state: state.order_state,
-    sub_total: sub_total
+    subTotal: subTotal
   };
 }
 exports.default = (0, _reactRouter.withRouter)((0, _reactRedux.connect)(mapStateToProps)(OrderStatusPage));
@@ -6848,7 +6852,7 @@ var _DefaultButton2 = _interopRequireDefault(_DefaultButton);
 
 var _core = __webpack_require__(3);
 
-var _clsx = __webpack_require__(1);
+var _clsx = __webpack_require__(2);
 
 var _clsx2 = _interopRequireDefault(_clsx);
 
@@ -6937,7 +6941,7 @@ var ResetPassword = function (_React$Component) {
               if (res.data.token === undefined || res.data.token === '') setErrMsg(true);else {
                 _this.props.router.push('/');
                 // console.log(res.data.token, res.data.firstname, phoneNumber, password);
-                _this.props.dispatch((0, _ProfileActions.SignIn)({
+                _this.props.dispatch((0, _ProfileActions.signIn)({
                   token: res.data.token,
                   firstname: res.data.firstname,
                   phonenumber: phoneNumber,
@@ -7232,7 +7236,11 @@ app.use(cors());
 app.use((0, _compression2.default)());
 app.use(_bodyParser2.default.json({ limit: '20mb' }));
 app.use(_bodyParser2.default.urlencoded({ limit: '20mb', extended: false }));
-app.use(_express2.default.static(_path2.default.resolve(__dirname, '../dist/client')));
+if (process.env.NODE_ENV === 'production') {
+  app.use(_express2.default.static(_path2.default.resolve(__dirname, '../dist/client')));
+} else {
+  app.use(_express2.default.static(_path2.default.resolve(__dirname, '../client/asset')));
+}
 app.use('/api/post', _post2.default);
 app.use('/api/user', _user2.default);
 app.use('/api/payment', _stripe2.default);
@@ -7328,7 +7336,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _propTypes = __webpack_require__(2);
+var _propTypes = __webpack_require__(1);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
@@ -8097,13 +8105,13 @@ var _reactHelmet = __webpack_require__(14);
 
 var _reactHelmet2 = _interopRequireDefault(_reactHelmet);
 
-var _propTypes = __webpack_require__(2);
+var _propTypes = __webpack_require__(1);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
 var _reactRedux = __webpack_require__(6);
 
-var _clsx = __webpack_require__(1);
+var _clsx = __webpack_require__(2);
 
 var _clsx2 = _interopRequireDefault(_clsx);
 
@@ -8199,7 +8207,7 @@ var App = exports.App = function (_Component) {
     _this.onOK = function () {
       _this.setState({ openAlert: false });
       _this.props.dispatch((0, _AppActions.branchChanged)(_this.props.changeBranch));
-      _this.props.dispatch((0, _HomeActions.bag_clear)());
+      _this.props.dispatch((0, _HomeActions.bagClear)());
     };
 
     _this.onCancel = function () {
@@ -8359,11 +8367,11 @@ var _reactRedux = __webpack_require__(6);
 
 var _reactRouter = __webpack_require__(5);
 
-var _clsx = __webpack_require__(1);
+var _clsx = __webpack_require__(2);
 
 var _clsx2 = _interopRequireDefault(_clsx);
 
-var _propTypes = __webpack_require__(2);
+var _propTypes = __webpack_require__(1);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
@@ -8392,8 +8400,6 @@ var _ForgotPassword2 = _interopRequireDefault(_ForgotPassword);
 var _AppActions = __webpack_require__(11);
 
 var _ProfileActions = __webpack_require__(7);
-
-var _HomeActions = __webpack_require__(9);
 
 var _cookieRead = __webpack_require__(18);
 
@@ -8428,25 +8434,25 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-//import Components
+// import Components
 
 
-//import Actions
+// import Actions
 
 
-//import Utils
+// import Utils
 
 
-//import Styles
+// import Styles
 
 
-var _ref = _jsx("div", {});
+var _ref = _jsx('div', {});
 
 var _ref2 = _jsx(_icons.ExpandMore, {});
 
 var _ref3 = _jsx(_DropdownMenuItem2.default, {
-  to: "/profile"
-}, void 0, " Profile ");
+  to: '/profile'
+}, void 0, ' Profile ');
 
 var _ref4 = _jsx(_reactstrap.DropdownItem, {
   divider: true
@@ -8488,8 +8494,8 @@ var Header = function (_React$Component) {
     };
 
     _this.onSignOut = function () {
-      _this.props.dispatch((0, _ProfileActions.SignOut)());
-      _this.props.router.push("/");
+      _this.props.dispatch((0, _ProfileActions.signOut)());
+      _this.props.router.push('/');
     };
 
     _this.handleClose = function () {
@@ -8510,25 +8516,25 @@ var Header = function (_React$Component) {
   }
 
   _createClass(Header, [{
-    key: "componentDidMount",
+    key: 'componentDidMount',
     value: function componentDidMount() {
-      var token = (0, _cookieRead2.default)("token");
-      var firstname = (0, _cookieRead2.default)("firstname");
-      var password = (0, _cookieRead2.default)("password");
-      var phonenumber = (0, _cookieRead2.default)("phonenumber");
+      var token = (0, _cookieRead2.default)('token');
+      var firstname = (0, _cookieRead2.default)('firstname');
+      var password = (0, _cookieRead2.default)('password');
+      var phonenumber = (0, _cookieRead2.default)('phonenumber');
       if (!this.props.token && token) {
-        this.props.dispatch((0, _ProfileActions.SignIn)({ token: token, firstname: firstname, password: password, phonenumber: phonenumber }));
+        this.props.dispatch((0, _ProfileActions.signIn)({ token: token, firstname: firstname, password: password, phonenumber: phonenumber }));
       }
       this.handleScroll();
-      window.addEventListener("scroll", this.handleScroll);
+      window.addEventListener('scroll', this.handleScroll);
     }
   }, {
-    key: "componentWillUnmount",
+    key: 'componentWillUnmount',
     value: function componentWillUnmount() {
-      window.removeEventListener("scroll", this.handleScroll);
+      window.removeEventListener('scroll', this.handleScroll);
     }
   }, {
-    key: "render",
+    key: 'render',
     value: function render() {
       var _this2 = this;
 
@@ -8542,74 +8548,74 @@ var Header = function (_React$Component) {
           firstname = _props.firstname,
           getRef = _props.getRef;
 
-      var viewMenu = !this.context.router.isActive("/", true) && branch !== {};
-      var hideNav = this.context.router.isActive("/login") || this.context.router.isActive("/signup");
-      var effect = headerEffect || !(this.context.router.isActive("/", true) || this.context.router.isActive("/products", true));
+      var viewMenu = !this.context.router.isActive('/', true) && branch !== {};
+      var hideNav = this.context.router.isActive('/login') || this.context.router.isActive('/signup');
+      var effect = headerEffect || !(this.context.router.isActive('/', true) || this.context.router.isActive('/products', true));
 
       if (hideNav) {
         return _ref;
       }
 
       return _react2.default.createElement(
-        "div",
+        'div',
         {
-          className: (0, _clsx2.default)(_Header2.default["header-container"], effect === true ? _Header2.default["effect"] : ""),
-          style: { zIndex: "10" },
+          className: (0, _clsx2.default)(_Header2.default['header-container'], effect === true ? _Header2.default['effect'] : ''),
+          style: { zIndex: '10' },
           ref: function ref(_ref5) {
             return getRef(_ref5);
           }
         },
         _jsx(_reactstrap.Navbar, {
-          expand: "md",
-          className: _Header2.default["header"]
+          expand: 'md',
+          className: _Header2.default['header']
         }, void 0, viewMenu && _jsx(_reactstrap.Nav, {
-          className: _Header2.default["menu"]
-        }, void 0, _jsx("div", {
+          className: _Header2.default['menu']
+        }, void 0, _jsx('div', {
           onClick: function onClick() {
-            return router.push("/");
+            return router.push('/');
           }
-        }, void 0, effect ? _jsx("div", {
-          className: _Header2.default["logo"],
+        }, void 0, effect ? _jsx('div', {
+          className: _Header2.default['logo'],
           style: {
-            backgroundImage: "url(" + business.logoUrl + ")"
+            backgroundImage: 'url(' + (branch.photoUrl || business.logoUrl) + ')'
           }
         }) : (0, _icons2.fork)()), _jsx(_reactstrap.UncontrolledDropdown, {
           nav: true,
           inNavbar: true
         }, void 0, _jsx(_reactstrap.DropdownToggle, {
           nav: true,
-          className: "p-0"
-        }, void 0, _jsx("span", {
-          className: _Header2.default["menutitle"]
-        }, void 0, _jsx("span", {}, void 0, branch.name || business.name), _ref2)), _jsx(_reactstrap.DropdownMenu, {}, void 0, branches.map(function (b, index) {
+          className: 'p-0'
+        }, void 0, _jsx('span', {
+          className: _Header2.default['menutitle']
+        }, void 0, _jsx('span', {}, void 0, branch.name || business.name), _ref2)), _jsx(_reactstrap.DropdownMenu, {}, void 0, branches.map(function (b, index) {
           return _jsx(_DropdownMenuItem2.default, {
-            to: "/products",
+            to: '/products',
             action: function action() {
               return _this2.handleBranch(b.id);
             }
           }, index, b.name);
         })))), _jsx(_reactstrap.Nav, {
-          className: _Header2.default["right-menu"]
-        }, void 0, token === "" || token === undefined ? _jsx("div", {}, void 0, _jsx("div", {
-          className: _Header2.default["menu-item"],
+          className: _Header2.default['right-menu']
+        }, void 0, token === '' || token === undefined ? _jsx('div', {}, void 0, _jsx('div', {
+          className: _Header2.default['menu-item'],
           onClick: this.openLogIn
-        }, void 0, "Log In"), _jsx("div", {
-          className: _Header2.default["menu-item"],
+        }, void 0, 'Log In'), _jsx('div', {
+          className: _Header2.default['menu-item'],
           onClick: this.openSignUp
-        }, void 0, "Sign Up")) : _jsx(_reactstrap.UncontrolledDropdown, {
+        }, void 0, 'Sign Up')) : _jsx(_reactstrap.UncontrolledDropdown, {
           nav: true,
           inNavbar: true
         }, void 0, _jsx(_reactstrap.DropdownToggle, {
           nav: true,
           className: _Header2.default.account
-        }, void 0, _jsx("p", {
-          className: _Header2.default["username"]
-        }, void 0, firstname), (0, _icons2.account_lg)()), _jsx(_reactstrap.DropdownMenu, {
+        }, void 0, _jsx('p', {
+          className: _Header2.default['username']
+        }, void 0, firstname), (0, _icons2.accountIconLg)()), _jsx(_reactstrap.DropdownMenu, {
           right: true
         }, void 0, _ref3, _ref4, _jsx(_DropdownMenuItem2.default, {
-          to: "/products",
+          to: '/products',
           onClick: this.onSignOut
-        }, void 0, "Sign out"))))),
+        }, void 0, 'Sign out'))))),
         _jsx(_Login2.default, {
           open: this.state.openLog,
           onClose: this.handleClose,
@@ -8672,11 +8678,11 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouter = __webpack_require__(5);
 
-var _clsx = __webpack_require__(1);
+var _clsx = __webpack_require__(2);
 
 var _clsx2 = _interopRequireDefault(_clsx);
 
-var _propTypes = __webpack_require__(2);
+var _propTypes = __webpack_require__(1);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
@@ -8758,7 +8764,7 @@ var _axios = __webpack_require__(10);
 
 var _axios2 = _interopRequireDefault(_axios);
 
-var _clsx = __webpack_require__(1);
+var _clsx = __webpack_require__(2);
 
 var _clsx2 = _interopRequireDefault(_clsx);
 
@@ -8812,7 +8818,7 @@ var _SignUp = {
   "loading": "_2skFViNDddeUCBN4C6lztQ",
   "verifying": "_2qjamY-JSz89uwqj3ik0Zt",
   "verify-container": "_1vIb0P46_KBg3BHBHah74D",
-  "err_msg": "_2awPgCHWfnEFt0sx82g_M6",
+  "errMsg": "_2qb-BZZq_95BSAJw5kIVfk",
   "err_psw": "T7yBRtKxTL2HE-YvC35BM",
   "noneFoucs": "_14yzBPoA1xoEjolkZEBmLH",
   "phone-class": "_2g3jxweHmSrOzJ6EeL1D3I",
@@ -8826,100 +8832,99 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var useStyles = (0, _styles.makeStyles)(function (theme) {
   return {
     form: {
-      "& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline": {
-        borderColor: "#00cabe!important"
+      '& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline': {
+        borderColor: '#00cabe!important'
       },
-      "& .MuiFormLabel-root.Mui-focused": {
-        color: "#00cabe!important"
+      '& .MuiFormLabel-root.Mui-focused': {
+        color: '#00cabe!important'
       }
     },
     textField: {
-      margin: "auto",
+      margin: 'auto',
       maxWidth: 400,
-      marginTop: "15px",
-      display: "block",
-      "& fieldset:focus": {
-        borderColor: "#f00!important"
+      marginTop: '15px',
+      display: 'block',
+      '& fieldset:focus': {
+        borderColor: '#f00!important'
       }
     },
     textField1: {
-      color: "#636F88",
-      margin: "auto",
+      color: '#636F88',
+      margin: 'auto',
       maxWidth: 150,
-      marginTop: "15px",
-      display: "block"
+      marginTop: '15px',
+      display: 'block'
     },
     textField2: {
-      color: "#636F88",
-      margin: "auto",
+      color: '#636F88',
+      margin: 'auto',
       maxWidth: 150,
-      marginTop: "15px",
-      display: "block",
-      "& fieldset": {
-        borderColor: "#f00!important"
+      marginTop: '15px',
+      display: 'block',
+      '& fieldset': {
+        borderColor: '#f00!important'
       }
     },
     grid: {
       maxWidth: 400,
-      margin: "auto"
+      margin: 'auto'
     },
 
     grid1: {
       maxWidth: 400,
-      margin: "auto",
-      marginBottom: "80px"
+      margin: 'auto',
+      marginBottom: '80px'
     }
   };
 });
-var err_msg = ["Verification Code is Required", //err_ind = 1
-"Verification Failed", //err_ind = 2
-"Confirm Password doesnt match" //err_ind = 3
-];
+var errMsg = ['Verification Code is Required', //err_ind = 1
+'Verification Failed', //err_ind = 2
+'Confirm Password doesnt match'];
 
-var _ref = _jsx("p", {}, void 0, "Verifying");
+var _ref = _jsx('p', {}, void 0, 'Verifying');
 
-var _ref2 = _jsx("p", {}, void 0, "Verified");
+var _ref2 = _jsx('p', {}, void 0, 'Verified');
 
-var _ref3 = _jsx("p", {}, void 0, "Verify Phone Number");
+var _ref3 = _jsx('p', {}, void 0, 'Verify Phone Number');
 
-var _ref4 = _jsx("p", {}, void 0, "We will send you a text with a code.", _jsx("br", {}), "The text is free, you're not charged for it.");
+var _ref4 = _jsx('p', {}, void 0, 'We will send you a text with a code.', _jsx('br', {}), 'The text is free, you\'re not charged for it.');
 
-var _ref5 = _jsx("span", {}, void 0, "Send");
+var _ref5 = _jsx('span', {}, void 0, 'Send');
 
-var _ref6 = _jsx("span", {}, void 0, "Sign Up");
+var _ref6 = _jsx('span', {}, void 0, 'Sign Up');
 
 var SignUp = function SignUp(props) {
-  var _useState = (0, _react.useState)(""),
+  var _useState = (0, _react.useState)(''),
       _useState2 = _slicedToArray(_useState, 2),
       phonenumber = _useState2[0],
       setPhone = _useState2[1];
 
-  var _useState3 = (0, _react.useState)(""),
+  var _useState3 = (0, _react.useState)(''),
       _useState4 = _slicedToArray(_useState3, 2),
       password = _useState4[0],
       setPassword = _useState4[1];
 
-  var _useState5 = (0, _react.useState)(""),
+  var _useState5 = (0, _react.useState)(''),
       _useState6 = _slicedToArray(_useState5, 2),
       cpassword = _useState6[0],
       setCPassword = _useState6[1];
 
-  var _useState7 = (0, _react.useState)(""),
+  var _useState7 = (0, _react.useState)(''),
       _useState8 = _slicedToArray(_useState7, 2),
       firstname = _useState8[0],
       setFirstName = _useState8[1];
 
-  var _useState9 = (0, _react.useState)(""),
+  var _useState9 = (0, _react.useState)(''),
       _useState10 = _slicedToArray(_useState9, 2),
       lastname = _useState10[0],
       setLastName = _useState10[1];
 
-  var _useState11 = (0, _react.useState)(""),
+  var _useState11 = (0, _react.useState)(''),
       _useState12 = _slicedToArray(_useState11, 2),
       email = _useState12[0],
       setEmail = _useState12[1];
 
-  var _useState13 = (0, _react.useState)(""),
+  var _useState13 = (0, _react.useState)(''),
       _useState14 = _slicedToArray(_useState13, 2),
       vrcode = _useState14[0],
       setVRCode = _useState14[1];
@@ -8939,7 +8944,7 @@ var SignUp = function SignUp(props) {
       verifying = _useState20[0],
       setVerifying = _useState20[1];
 
-  var _useState21 = (0, _react.useState)(""),
+  var _useState21 = (0, _react.useState)(''),
       _useState22 = _slicedToArray(_useState21, 2),
       token = _useState22[0],
       setToken = _useState22[1];
@@ -8960,11 +8965,11 @@ var SignUp = function SignUp(props) {
   };
   var onResend = function onResend() {
     (0, _axios2.default)({
-      method: "POST",
+      method: 'POST',
       // url: endpoint + '/api/user/verification',
-      url: "/api/user/verification",
+      url: '/api/user/verification',
       headers: {
-        "Content-Type": "application/json"
+        'Content-Type': 'application/json'
       },
       data: {
         phoneNumber: phonenumber
@@ -8977,11 +8982,11 @@ var SignUp = function SignUp(props) {
     setErrInd(0);
     setStep(2);
     (0, _axios2.default)({
-      method: "POST",
+      method: 'POST',
       // url: endpoint + '/api/user/verification',
-      url: "/api/user/verification",
+      url: '/api/user/verification',
       headers: {
-        "Content-Type": "application/json"
+        'Content-Type': 'application/json'
       },
       data: {
         phoneNumber: phonenumber
@@ -8996,14 +9001,14 @@ var SignUp = function SignUp(props) {
   };
   var onConfirm = function onConfirm() {
     setErrInd(0);
-    if (vrcode === "") setErrInd(1);else {
+    if (vrcode === '') setErrInd(1);else {
       setVerifying(1);
       (0, _axios2.default)({
-        method: "POST",
+        method: 'POST',
         // url: endpoint + '/api/user/confirm',
-        url: "/api/user/confirm",
+        url: '/api/user/confirm',
         headers: {
-          "Content-Type": "application/json"
+          'Content-Type': 'application/json'
         },
         data: {
           firstname: firstname,
@@ -9015,13 +9020,13 @@ var SignUp = function SignUp(props) {
         }
       }).then(function (res) {
         // console.log("CONFIRM RESPONSE", res.data);
-        if (res.data === "failed with Practi" || res.data === "failed" || res.data === "user already exists") {
+        if (res.data === 'failed with Practi' || res.data === 'failed' || res.data === 'user already exists') {
           setVerifying(0);
           setErrInd(2);
         } else {
           setVerifying(2);
           setErrInd(0);
-          props.dispatch((0, _ProfileActions.SignIn)({
+          props.dispatch((0, _ProfileActions.signIn)({
             token: res.data,
             firstname: firstname,
             password: password,
@@ -9037,43 +9042,43 @@ var SignUp = function SignUp(props) {
   return _jsx(_core.Modal, {
     open: props.open,
     onClose: props.onClose,
-    className: _SignUp2.default["modal-wrapper"]
-  }, void 0, _jsx("div", {
-    className: _SignUp2.default["body-container"]
-  }, void 0, _jsx("div", {
-    className: (0, _clsx2.default)(_SignUp2.default["form-container"], classes.form)
-  }, void 0, _jsx("div", {
-    className: _SignUp2.default["sub-forms"]
-  }, void 0, step > 0 && _jsx("div", {
+    className: _SignUp2.default['modal-wrapper']
+  }, void 0, _jsx('div', {
+    className: _SignUp2.default['body-container']
+  }, void 0, _jsx('div', {
+    className: (0, _clsx2.default)(_SignUp2.default['form-container'], classes.form)
+  }, void 0, _jsx('div', {
+    className: _SignUp2.default['sub-forms']
+  }, void 0, step > 0 && _jsx('div', {
     onClick: handlePrev,
-    className: _SignUp2.default["btn-prev"]
-  }, void 0, (0, _icons.prev)()), _jsx("div", {
+    className: _SignUp2.default['btn-prev']
+  }, void 0, (0, _icons.prevIcon)()), _jsx('div', {
     onClick: props.onClose,
-    className: _SignUp2.default["btn-close"]
-  }, void 0, (0, _icons.close_dlg)()), verifying === 1 && _jsx("div", {
-    className: _SignUp2.default["verifying"]
+    className: _SignUp2.default['btn-close']
+  }, void 0, (0, _icons.closeDlgIcon)()), verifying === 1 && _jsx('div', {
+    className: _SignUp2.default['verifying']
   }, void 0, _jsx(_ClipLoader2.default, {
-    sizeUnit: "px",
+    sizeUnit: 'px',
     size: 100,
-    color: "#fff",
+    color: '#fff',
     loading: verifying === 1 ? true : false
-  }), _ref), verifying === 2 && _jsx("div", {
-    className: _SignUp2.default["verifying"]
-  }, void 0, (0, _icons.verified)(), _ref2), _jsx("div", {
-    className: verifying > 0 ? _SignUp2.default["noneFoucs"] : ""
-  }, void 0, step === 2 && _jsx("div", {
-    className: _SignUp2.default["verify-container"]
-  }, void 0, _jsx("div", {
-    className: _SignUp2.default["phone-icon"]
-  }, void 0, (0, _icons.verify_phone)()), _jsx("p", {
-    className: _SignUp2.default["verification-code"]
-  }, void 0, "Enter Verification Code"), _jsx(_core.TextField, {
-    variant: "outlined",
-    margin: "normal",
+  }), _ref), verifying === 2 && _jsx('div', {
+    className: _SignUp2.default['verifying']
+  }, void 0, (0, _icons.verifiedIcon)(), _ref2), _jsx('div', {
+    className: verifying > 0 ? _SignUp2.default['noneFoucs'] : ''
+  }, void 0, step === 2 && _jsx('div', {
+    className: _SignUp2.default['verify-container']
+  }, void 0, _jsx('div', {
+    className: _SignUp2.default['phone-icon']
+  }, void 0, (0, _icons.seperateAddressIcon)()), _jsx('p', {
+    className: _SignUp2.default['verification-code']
+  }, void 0, 'Enter Verification Code'), _jsx(_core.TextField, {
+    variant: 'outlined',
+    margin: 'normal',
     required: true,
     fullWidth: true,
-    color: "secondary",
-    type: "password",
+    color: 'secondary',
+    type: 'password',
     inputProps: {
       maxLength: 4
     },
@@ -9082,17 +9087,17 @@ var SignUp = function SignUp(props) {
       setErrInd(0);
     },
     className: err_ind ? classes.textField2 : classes.textField1
-  }), _jsx("p", {
-    className: _SignUp2.default["err_msg"],
+  }), _jsx('p', {
+    className: _SignUp2.default['errMsg'],
     style: {}
-  }, void 0, err_ind !== 0 && err_msg[err_ind - 1]), _jsx("div", {
-    className: _SignUp2.default["verify-layout"]
-  }, void 0, _jsx("p", {
+  }, void 0, err_ind !== 0 && errMsg[err_ind - 1]), _jsx('div', {
+    className: _SignUp2.default['verify-layout']
+  }, void 0, _jsx('p', {
     onClick: onConfirm
-  }, void 0, "Confirm"), _jsx("p", {
+  }, void 0, 'Confirm'), _jsx('p', {
     onClick: onResend
-  }, void 0, "Resend SMS?"))), step === 1 && _jsx("div", {
-    className: _SignUp2.default["step1-title"]
+  }, void 0, 'Resend SMS?'))), step === 1 && _jsx('div', {
+    className: _SignUp2.default['step1-title']
   }, void 0, _ref3, _ref4, _jsx(_core.Grid, {
     container: true,
     className: classes.grid1
@@ -9101,44 +9106,44 @@ var SignUp = function SignUp(props) {
     xs: 12,
     sm: 9
   }, void 0, _jsx(_reactPhoneInput2.default, {
-    defaultCountry: "us",
+    defaultCountry: 'us',
     value: phonenumber,
-    containerClass: (0, _clsx2.default)(_SignUp2.default["react-tel"], "react-tel-input"),
+    containerClass: (0, _clsx2.default)(_SignUp2.default['react-tel'], 'react-tel-input'),
     disabled: true,
     inputExtraProps: {
-      name: "phoneNumber1",
+      name: 'phoneNumber1',
       required: true
     },
-    inputClass: _SignUp2.default["phone-class"]
+    inputClass: _SignUp2.default['phone-class']
   })), _jsx(_core.Grid, {
     item: true,
     xs: 12,
     sm: 3
   }, void 0, _jsx(_DefaultButton2.default, {
-    className: _SignUp2.default["btn-send"],
+    className: _SignUp2.default['btn-send'],
     onClick: onSend
-  }, void 0, _ref5)))), step === 0 && _jsx("form", {
+  }, void 0, _ref5)))), step === 0 && _jsx('form', {
     onSubmit: onSubmit
-  }, void 0, _jsx("p", {
-    className: _SignUp2.default["sub-title"]
-  }, void 0, "Sign Up"), _jsx(_core.Grid, {
+  }, void 0, _jsx('p', {
+    className: _SignUp2.default['sub-title']
+  }, void 0, 'Sign Up'), _jsx(_core.Grid, {
     container: true,
     className: classes.grid
   }, void 0, _jsx(_core.Grid, {
     item: true,
     xs: 12,
     sm: 6
-  }, void 0, _jsx("div", {
-    className: _SignUp2.default["space-field1"]
+  }, void 0, _jsx('div', {
+    className: _SignUp2.default['space-field1']
   }, void 0, _jsx(_core.TextField
   //   autoComplete="fname"
   , {
-    name: "firstName",
-    variant: "outlined",
+    name: 'firstName',
+    variant: 'outlined',
     required: true,
     fullWidth: true,
-    id: "firstName",
-    label: "First Name",
+    id: 'firstName',
+    label: 'First Name',
     className: classes.textField,
     value: firstname,
     onChange: function onChange(e) {
@@ -9148,86 +9153,86 @@ var SignUp = function SignUp(props) {
     item: true,
     xs: 12,
     sm: 6
-  }, void 0, _jsx("div", {
-    className: _SignUp2.default["space-field2"]
+  }, void 0, _jsx('div', {
+    className: _SignUp2.default['space-field2']
   }, void 0, _jsx(_core.TextField, {
-    variant: "outlined",
+    variant: 'outlined',
     required: true,
     fullWidth: true,
-    id: "lastName",
-    label: "Last Name",
-    name: "lastName",
+    id: 'lastName',
+    label: 'Last Name',
+    name: 'lastName',
     className: classes.textField,
     value: lastname,
     onChange: function onChange(e) {
       return setLastName(e.target.value);
     }
   })))), _jsx(_core.TextField, {
-    variant: "outlined",
-    margin: "normal",
+    variant: 'outlined',
+    margin: 'normal',
     required: true,
     fullWidth: true,
-    id: "email",
-    label: "Email",
-    name: "email",
-    type: "email",
-    autoComplete: "false",
+    id: 'email',
+    label: 'Email',
+    name: 'email',
+    type: 'email',
+    autoComplete: 'false',
     className: classes.textField,
     value: email,
     onChange: function onChange(e) {
       return setEmail(e.target.value);
     }
   }), _jsx(_reactPhoneInput2.default, {
-    defaultCountry: "us",
+    defaultCountry: 'us',
     value: phonenumber,
     onChange: function onChange(value) {
       return setPhone(value);
     },
-    containerClass: (0, _clsx2.default)(_SignUp2.default["react-tel"], "react-tel-input"),
+    containerClass: (0, _clsx2.default)(_SignUp2.default['react-tel'], 'react-tel-input'),
     inputExtraProps: {
-      name: "phoneNumber",
+      name: 'phoneNumber',
       required: true
     },
-    inputClass: _SignUp2.default["phone-class"]
+    inputClass: _SignUp2.default['phone-class']
   }), _jsx(_core.TextField, {
-    variant: "outlined",
-    margin: "normal",
+    variant: 'outlined',
+    margin: 'normal',
     required: true,
     fullWidth: true,
-    name: "password",
-    label: "Password",
-    type: "password",
-    id: "password",
+    name: 'password',
+    label: 'Password',
+    type: 'password',
+    id: 'password',
     className: classes.textField,
     value: password,
     onChange: function onChange(e) {
       return setPassword(e.target.value);
     }
   }), _jsx(_core.TextField, {
-    variant: "outlined",
-    margin: "normal",
+    variant: 'outlined',
+    margin: 'normal',
     required: true,
     fullWidth: true,
-    name: "cpassword",
-    label: "Confirm Password",
-    type: "password",
-    id: "cpassword",
+    name: 'cpassword',
+    label: 'Confirm Password',
+    type: 'password',
+    id: 'cpassword',
     className: classes.textField,
     value: cpassword,
     onChange: function onChange(e) {
       return setCPassword(e.target.value);
     }
-  }), _jsx("p", {
-    className: (0, _clsx2.default)(_SignUp2.default["err_msg"], _SignUp2.default["err_psw"])
-  }, void 0, err_ind === 3 && err_msg[2]), _jsx("div", {
-    className: _SignUp2.default["div-sign"]
+  }), _jsx('p', {
+    className: (0, _clsx2.default)(_SignUp2.default['errMsg'], _SignUp2.default['err_psw'])
+  }, void 0, err_ind === 3 && errMsg[2]), _jsx('div', {
+    className: _SignUp2.default['div-sign']
   }, void 0, _jsx(_DefaultButton2.default, {
-    className: _SignUp2.default["btn-sign"],
-    type: "submit"
-  }, void 0, _ref6)), _jsx("p", {
-    className: _SignUp2.default["go-signup"],
+    className: _SignUp2.default['btn-sign'],
+    type: 'submit'
+  }, void 0, _ref6)), _jsx('p', {
+    className: _SignUp2.default['go-signup'],
     onClick: props.onSwitch
-  }, void 0, "Already have an account? Sign In")))))));
+  }, void 0, 'Already have an account? Sign In')))))));
 };
 
 exports.default = SignUp;
@@ -9259,7 +9264,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouter = __webpack_require__(5);
 
-var _clsx = __webpack_require__(1);
+var _clsx = __webpack_require__(2);
 
 var _clsx2 = _interopRequireDefault(_clsx);
 
@@ -9338,7 +9343,7 @@ var Login = function Login(props) {
 
   var _useState5 = (0, _react.useState)(false),
       _useState6 = _slicedToArray(_useState5, 2),
-      err_msg = _useState6[0],
+      errMsg = _useState6[0],
       setErrMsg = _useState6[1];
 
   var passwordChange = function passwordChange(event) {
@@ -9363,7 +9368,7 @@ var Login = function Login(props) {
     }).then(function (res) {
       // console.log("LOGIN RESPONSE:", res.data);
       if (res.data.token === undefined || res.data.token === "") setErrMsg(true);else {
-        props.dispatch((0, _ProfileActions.SignIn)({
+        props.dispatch((0, _ProfileActions.signIn)({
           token: res.data.token,
           firstname: res.data.firstname,
           phonenumber: phonenumber,
@@ -9383,7 +9388,7 @@ var Login = function Login(props) {
   }, void 0, _jsx("div", {
     onClick: props.onClose,
     className: _Login2.default["btn-close"]
-  }, void 0, (0, _icons.close_dlg)()), _jsx("form", {
+  }, void 0, (0, _icons.closeDlgIcon)()), _jsx("form", {
     onSubmit: onSubmit,
     className: classes.form
   }, void 0, _jsx("div", {
@@ -9411,7 +9416,7 @@ var Login = function Login(props) {
     id: "password",
     className: classes.textField,
     onChange: passwordChange
-  }), err_msg === true && _jsx("p", {
+  }), errMsg === true && _jsx("p", {
     className: _Login2.default["err-msg"]
   }, void 0, "Invalid Credential"), _jsx("div", {
     className: _Login2.default["div-sign"]
@@ -9449,9 +9454,13 @@ var _axios = __webpack_require__(10);
 
 var _axios2 = _interopRequireDefault(_axios);
 
-var _clsx = __webpack_require__(1);
+var _clsx = __webpack_require__(2);
 
 var _clsx2 = _interopRequireDefault(_clsx);
+
+var _propTypes = __webpack_require__(1);
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
 
 var _core = __webpack_require__(3);
 
@@ -9489,7 +9498,7 @@ var _ForgotPassword = {
   "loading": "_3tmumpfEdiEMOiZjsWv_C0",
   "verifying": "_1sJ2NRYUhxNoxWknSCDFPf",
   "verify-container": "oDh54N0EbO8-O53Fhj_di",
-  "err_msg": "NId21U89rwVztcJvKEQFX",
+  "errMsg": "_1ubB5qjsVh33e_LT4drLSu",
   "err_psw": "_1tMGWEBKB275gR5AzLTAeC",
   "noneFoucs": "_1V4tTe0Lq6qfgWO3J55s4V",
   "phone-class": "_2dTKEahXAVHYyBBUYL6PBU",
@@ -9503,68 +9512,72 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var useStyles = (0, _styles.makeStyles)(function (theme) {
   return {
     form: {
-      "& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline": {
-        borderColor: "#00cabe!important"
+      '& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline': {
+        borderColor: '#00cabe!important'
       },
-      "& .MuiFormLabel-root.Mui-focused": {
-        color: "#00cabe!important"
+      '& .MuiFormLabel-root.Mui-focused': {
+        color: '#00cabe!important'
       }
     },
     textField: {
-      margin: "auto",
+      margin: 'auto',
       maxWidth: 400,
-      marginTop: "15px",
-      display: "block",
-      "& fieldset:focus": {
-        borderColor: "#f00!important"
+      marginTop: '15px',
+      display: 'block',
+      '& fieldset:focus': {
+        borderColor: '#f00!important'
       }
     },
     textField1: {
-      color: "#636F88",
-      margin: "auto",
+      color: '#636F88',
+      margin: 'auto',
       maxWidth: 150,
-      marginTop: "15px",
-      display: "block"
+      marginTop: '15px',
+      display: 'block'
     },
     textField2: {
-      color: "#636F88",
-      margin: "auto",
+      color: '#636F88',
+      margin: 'auto',
       maxWidth: 150,
-      marginTop: "15px",
-      display: "block",
-      "& fieldset": {
-        borderColor: "#f00!important"
+      marginTop: '15px',
+      display: 'block',
+      '& fieldset': {
+        borderColor: '#f00!important'
       }
     },
     grid: {
       maxWidth: 400,
-      margin: "auto"
+      margin: 'auto'
     },
 
     grid1: {
       maxWidth: 400,
-      margin: "auto",
-      marginBottom: "20px"
+      margin: 'auto',
+      marginBottom: '20px'
     }
   };
 });
 
-var err_msg = ["This Email doesn't exist", ""];
+var errMsg = ["This Email doesn't exist", ''];
 
-var _ref = _jsx("p", {}, void 0, "A password reset message was sent to your email address.", _jsx("br", {}), " Please click the link in that message to reset your password.", _jsx("br", {}), "If you didn't receive mail please click below button to resend.");
+var _ref2 = _jsx('p', {}, void 0, 'A password reset message was sent to your email address.', _jsx('br', {}), ' Please click the link in that message to reset your password.', _jsx('br', {}), 'If you didn\'t receive mail please click below button to resend.');
 
-var _ref2 = _jsx("p", {}, void 0, "Some errors occured with sending email");
+var _ref3 = _jsx('p', {}, void 0, 'Some errors occured with sending email');
 
-var _ref3 = _jsx("span", {}, void 0, "Resend");
+var _ref4 = _jsx('span', {}, void 0, 'Resend');
 
-var _ref4 = _jsx("p", {}, void 0, "Forgot Password?");
+var _ref5 = _jsx('p', {}, void 0, 'Forgot Password?');
 
-var _ref5 = _jsx("br", {});
+var _ref6 = _jsx('br', {});
 
-var _ref6 = _jsx("span", {}, void 0, "Send");
+var _ref7 = _jsx('span', {}, void 0, 'Send');
 
-var ForgotPassword = function ForgotPassword(props) {
-  var _useState = (0, _react.useState)(""),
+var ForgotPassword = function ForgotPassword(_ref) {
+  var open = _ref.open,
+      onClose = _ref.onClose,
+      onSwitch = _ref.onSwitch;
+
+  var _useState = (0, _react.useState)(''),
       _useState2 = _slicedToArray(_useState, 2),
       email = _useState2[0],
       setEmail = _useState2[1];
@@ -9591,19 +9604,19 @@ var ForgotPassword = function ForgotPassword(props) {
     // console.log("I am ONSEND");
 
     (0, _axios2.default)({
-      method: "POST",
-      url: "/api/user/forgotPassword",
+      method: 'POST',
+      url: '/api/user/forgotPassword',
       headers: {
-        "Content-Type": "application/json"
+        'Content-Type': 'application/json'
       },
       data: {
         email: email
       }
     }).then(function (res) {
       // console.log(res);
-      if (res.data === "invalid email") {
+      if (res.data === 'invalid email') {
         setErrInd(true);
-      } else if (res.data.status === "sent") {
+      } else if (res.data.status === 'sent') {
         setErrInd(false);
         setErrSend(false);
         setStep(2);
@@ -9620,32 +9633,32 @@ var ForgotPassword = function ForgotPassword(props) {
   };
 
   return _jsx(_core.Modal, {
-    open: props.open,
-    onClose: props.onClose,
-    className: _ForgotPassword2.default["modal-wrapper"]
-  }, void 0, _jsx("div", {
-    className: _ForgotPassword2.default["body-container"]
-  }, void 0, _jsx("div", {
-    className: (0, _clsx2.default)(_ForgotPassword2.default["form-container"], classes.form)
-  }, void 0, _jsx("div", {
-    className: _ForgotPassword2.default["sub-forms"]
-  }, void 0, step === 2 && _jsx("div", {
+    open: open,
+    onClose: onClose,
+    className: _ForgotPassword2.default['modal-wrapper']
+  }, void 0, _jsx('div', {
+    className: _ForgotPassword2.default['body-container']
+  }, void 0, _jsx('div', {
+    className: (0, _clsx2.default)(_ForgotPassword2.default['form-container'], classes.form)
+  }, void 0, _jsx('div', {
+    className: _ForgotPassword2.default['sub-forms']
+  }, void 0, step === 2 && _jsx('div', {
     onClick: handlePrev,
-    className: _ForgotPassword2.default["btn-prev"]
-  }, void 0, (0, _icons.prev)()), _jsx("div", {
-    onClick: props.onClose,
-    className: _ForgotPassword2.default["btn-close"]
-  }, void 0, (0, _icons.close_dlg)()), step === 2 && _jsx("div", {
-    className: _ForgotPassword2.default["final-message"]
-  }, void 0, err_send === false && _ref, err_send === true && _ref2, _jsx(_DefaultButton2.default, {
-    className: _ForgotPassword2.default["btn-send"],
+    className: _ForgotPassword2.default['btn-prev']
+  }, void 0, (0, _icons.prevIcon)()), _jsx('div', {
+    onClick: onClose,
+    className: _ForgotPassword2.default['btn-close']
+  }, void 0, (0, _icons.closeDlgIcon)()), step === 2 && _jsx('div', {
+    className: _ForgotPassword2.default['final-message']
+  }, void 0, err_send === false && _ref2, err_send === true && _ref3, _jsx(_DefaultButton2.default, {
+    className: _ForgotPassword2.default['btn-send'],
     onClick: onSend
-  }, void 0, _ref3)), step === 1 && _jsx("form", {
-    className: _ForgotPassword2.default["step1-title"],
+  }, void 0, _ref4)), step === 1 && _jsx('form', {
+    className: _ForgotPassword2.default['step1-title'],
     onSubmit: onSend
-  }, void 0, _ref4, _jsx("p", {
-    className: _ForgotPassword2.default["step1-subtitle"]
-  }, void 0, "Don't worry. Resetting your password is easy, just tell us the email you registered with Shine's Bakery.", _ref5), _jsx(_core.Grid, {
+  }, void 0, _ref5, _jsx('p', {
+    className: _ForgotPassword2.default['step1-subtitle']
+  }, void 0, 'Don\'t worry. Resetting your password is easy, just tell us the email you registered with Shine\'s Bakery.', _ref6), _jsx(_core.Grid, {
     container: true,
     className: classes.grid1
   }, void 0, _jsx(_core.Grid, {
@@ -9653,33 +9666,33 @@ var ForgotPassword = function ForgotPassword(props) {
     xs: 12,
     sm: 12
   }, void 0, _jsx(_core.TextField, {
-    variant: "outlined",
-    margin: "normal",
+    variant: 'outlined',
+    margin: 'normal',
     required: true,
     fullWidth: true,
-    id: "email",
-    label: "Email",
-    name: "email",
-    type: "email",
-    autoComplete: "false",
+    id: 'email',
+    label: 'Email',
+    name: 'email',
+    type: 'email',
+    autoComplete: 'false',
     className: classes.textField,
     value: email,
     onChange: function onChange(e) {
       return setEmail(e.target.value);
     }
-  }), err_ind === true && _jsx("p", {
-    className: _ForgotPassword2.default["err_msg"]
-  }, void 0, err_msg[0])), _jsx(_core.Grid, {
+  }), err_ind === true && _jsx('p', {
+    className: _ForgotPassword2.default['errMsg']
+  }, void 0, errMsg[0])), _jsx(_core.Grid, {
     item: true,
     xs: 12,
     sm: 12
   }, void 0, _jsx(_DefaultButton2.default, {
-    className: _ForgotPassword2.default["btn-send"],
-    type: "submit"
-  }, void 0, _ref6))), _jsx("p", {
-    className: _ForgotPassword2.default["go-signup"],
-    onClick: props.onSwitch
-  }, void 0, "Already have an account? Sign In"))))));
+    className: _ForgotPassword2.default['btn-send'],
+    type: 'submit'
+  }, void 0, _ref7))), _jsx('p', {
+    className: _ForgotPassword2.default['go-signup'],
+    onClick: onSwitch
+  }, void 0, 'Already have an account? Sign In'))))));
 };
 
 exports.default = ForgotPassword;
@@ -9710,7 +9723,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _clsx = __webpack_require__(1);
+var _clsx = __webpack_require__(2);
 
 var _clsx2 = _interopRequireDefault(_clsx);
 
@@ -9741,8 +9754,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var SocialIconButton = (0, _core.withStyles)(function (theme) {
   return {
     root: {
-      backgroundColor: "transparent",
-      "&:hover": {
+      backgroundColor: 'transparent',
+      '&:hover': {
         backgroundColor: _colors.grey[700]
       }
     }
@@ -9752,62 +9765,62 @@ var SocialIconButton = (0, _core.withStyles)(function (theme) {
 var useStyles = (0, _styles.makeStyles)(function (theme) {
   return {
     innerButton: {
-      marginBottom: "15px",
-      background: "#646464",
-      opacity: "0.5",
-      fontSize: "12px",
-      borderRadius: "4px",
-      padding: "5px 15px",
-      textTransform: "capitalize",
-      color: "#ffffff",
-      "&:hover": {
-        backgroundColor: "#848484 !important"
+      marginBottom: '15px',
+      background: '#646464',
+      opacity: '0.5',
+      fontSize: '12px',
+      borderRadius: '4px',
+      padding: '5px 15px',
+      textTransform: 'capitalize',
+      color: '#ffffff',
+      '&:hover': {
+        backgroundColor: '#848484 !important'
       }
     }
   };
 });
 
-var _ref = _jsx("span", {}, void 0, "Newsletter");
+var _ref = _jsx('span', {}, void 0, 'Newsletter');
 
 function Footer() {
   var classes = useStyles();
 
-  return _jsx("div", {
-    className: _Footer2.default["footer-container"]
-  }, void 0, _jsx("div", {
-    className: _Footer2.default["footer"]
-  }, void 0, _jsx("div", {
-    className: _Footer2.default["footer-menu"]
-  }, void 0, _jsx("a", {
-    href: "http://instagram.com",
-    target: "_blank"
+  return _jsx('div', {
+    className: _Footer2.default['footer-container']
+  }, void 0, _jsx('div', {
+    className: _Footer2.default['footer']
+  }, void 0, _jsx('div', {
+    className: _Footer2.default['footer-menu']
+  }, void 0, _jsx('a', {
+    href: 'http://instagram.com',
+    target: '_blank'
   }, void 0, _jsx(SocialIconButton, {
-    "aria-label": "Instagram"
-  }, void 0, (0, _icons.instagram)())), _jsx("a", {
-    href: "http://facebook.com",
-    target: "_blank"
+    'aria-label': 'Instagram'
+  }, void 0, (0, _icons.instagram)())), _jsx('a', {
+    href: 'http://facebook.com',
+    target: '_blank'
   }, void 0, _jsx(SocialIconButton, {
-    "aria-label": "Facebook"
-  }, void 0, (0, _icons.facebook)())), _jsx("a", {
-    href: "/#",
+    'aria-label': 'Facebook'
+  }, void 0, (0, _icons.facebook)())), _jsx('a', {
+    href: '/#',
     className: _Footer2.default.link
-  }, void 0, "Terms and Conditions"), _jsx("a", {
-    href: "/#",
+  }, void 0, 'Terms and Conditions'), _jsx('a', {
+    href: '/#',
     className: _Footer2.default.link
-  }, void 0, "About Us"), _jsx("a", {
-    href: "/#",
+  }, void 0, 'About Us'), _jsx('a', {
+    href: '/#',
     className: _Footer2.default.link
-  }, void 0, "Contact")), _jsx("div", {
-    className: _Footer2.default["footer-subcribe"]
+  }, void 0, 'Contact')), _jsx('div', {
+    className: _Footer2.default['footer-subcribe']
   }, void 0, _ref, _jsx(_FormInput2.default, {
-    id: "subcribe_email",
-    label: "Enter Email...",
-    type: "email",
+    id: 'subcribe_email',
+    label: 'Enter Email...',
+    type: 'email',
     endAdornment: _jsx(_core.InputAdornment, {
-      position: "end"
+      position: 'end'
     }, void 0, _jsx(_core.Button, {
       className: (0, _clsx2.default)(classes.innerButton)
-    }, void 0, "Subcribe"))
+    }, void 0, 'Subcribe'))
   }))));
 }
 
@@ -9832,13 +9845,17 @@ Object.defineProperty(exports, "__esModule", {
 
 var _jsx = function () { var REACT_ELEMENT_TYPE = typeof Symbol === "function" && Symbol.for && Symbol.for("react.element") || 0xeac7; return function createRawReactElement(type, props, key, children) { var defaultProps = type && type.defaultProps; var childrenLength = arguments.length - 3; if (!props && childrenLength !== 0) { props = {}; } if (props && defaultProps) { for (var propName in defaultProps) { if (props[propName] === void 0) { props[propName] = defaultProps[propName]; } } } else if (!props) { props = defaultProps || {}; } if (childrenLength === 1) { props.children = children; } else if (childrenLength > 1) { var childArray = Array(childrenLength); for (var i = 0; i < childrenLength; i++) { childArray[i] = arguments[i + 3]; } props.children = childArray; } return { $$typeof: REACT_ELEMENT_TYPE, type: type, key: key === undefined ? null : '' + key, ref: null, props: props, _owner: null }; }; }();
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+// import Components
+
+
+// import Styles
+
 
 var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _propTypes = __webpack_require__(2);
+var _propTypes = __webpack_require__(1);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
@@ -9891,84 +9908,54 @@ var _AlertModal2 = _interopRequireDefault(_AlertModal);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-//import Components
-
-
-//import Styles
-
-
-var AlertModal = function (_React$Component) {
-  _inherits(AlertModal, _React$Component);
-
-  function AlertModal() {
-    _classCallCheck(this, AlertModal);
-
-    return _possibleConstructorReturn(this, (AlertModal.__proto__ || Object.getPrototypeOf(AlertModal)).apply(this, arguments));
-  }
-
-  _createClass(AlertModal, [{
-    key: "render",
-    value: function render() {
-      var _props = this.props,
-          title = _props.title,
-          content = _props.content,
-          okText = _props.okText,
-          cancelText = _props.cancelText,
-          onOK = _props.onOK,
-          onClose = _props.onClose,
-          open = _props.open;
-
-
-      return _jsx(_core.Modal, {
-        open: open,
-        onClose: onClose,
-        "aria-labelledby": "modal-title",
-        className: _AlertModal2.default["modal-wrapper"]
-      }, void 0, _jsx("div", {
-        className: _AlertModal2.default["Modal"]
-      }, void 0, _jsx("div", {
-        className: _AlertModal2.default["header"],
-        id: "modal-title"
-      }, void 0, _jsx("h4", {
-        className: _AlertModal2.default["title"]
-      }, void 0, title), _jsx(_core.IconButton, {
-        classes: { root: _AlertModal2.default["close"] },
-        "aria-label": "Close",
-        onClick: onClose
-      }, void 0, (0, _icons.close_dlg)())), _jsx("div", {
-        className: _AlertModal2.default["content"]
-      }, void 0, _jsx("div", {
-        className: _AlertModal2.default["icon"]
-      }, void 0, _jsx("div", {
-        className: _AlertModal2.default["sa"]
-      }, void 0, _jsx("div", {
-        className: _AlertModal2.default["sa-warning"]
-      }, void 0, _jsx("div", {
-        className: _AlertModal2.default["sa-warning-body"]
-      }), _jsx("div", {
-        className: _AlertModal2.default["sa-warning-dot"]
-      })))), _jsx("div", {
-        className: _AlertModal2.default["text"]
-      }, void 0, content)), _jsx("div", {
-        className: _AlertModal2.default["footer"]
-      }, void 0, _jsx(_DefaultButton2.default, {
-        className: _AlertModal2.default["action"],
-        onClick: onOK
-      }, void 0, okText), _jsx(_DefaultButton2.default, {
-        className: _AlertModal2.default["action"],
-        onClick: onClose
-      }, void 0, cancelText))));
-    }
-  }]);
-
-  return AlertModal;
-}(_react2.default.Component);
+var AlertModal = function AlertModal(_ref) {
+  var title = _ref.title,
+      content = _ref.content,
+      okText = _ref.okText,
+      cancelText = _ref.cancelText,
+      onOK = _ref.onOK,
+      onClose = _ref.onClose,
+      open = _ref.open;
+  return _jsx(_core.Modal, {
+    open: open,
+    onClose: onClose,
+    'aria-labelledby': 'modal-title',
+    className: _AlertModal2.default['modal-wrapper']
+  }, void 0, _jsx('div', {
+    className: _AlertModal2.default['Modal']
+  }, void 0, _jsx('div', {
+    className: _AlertModal2.default['header'],
+    id: 'modal-title'
+  }, void 0, _jsx('h4', {
+    className: _AlertModal2.default['title']
+  }, void 0, title), _jsx(_core.IconButton, {
+    classes: { root: _AlertModal2.default['close'] },
+    'aria-label': 'Close',
+    onClick: onClose
+  }, void 0, (0, _icons.closeDlgIcon)())), _jsx('div', {
+    className: _AlertModal2.default['content']
+  }, void 0, _jsx('div', {
+    className: _AlertModal2.default['icon']
+  }, void 0, _jsx('div', {
+    className: _AlertModal2.default['sa']
+  }, void 0, _jsx('div', {
+    className: _AlertModal2.default['sa-warning']
+  }, void 0, _jsx('div', {
+    className: _AlertModal2.default['sa-warning-body']
+  }), _jsx('div', {
+    className: _AlertModal2.default['sa-warning-dot']
+  })))), _jsx('div', {
+    className: _AlertModal2.default['text']
+  }, void 0, content)), _jsx('div', {
+    className: _AlertModal2.default['footer']
+  }, void 0, _jsx(_DefaultButton2.default, {
+    className: _AlertModal2.default['action'],
+    onClick: onOK
+  }, void 0, okText), _jsx(_DefaultButton2.default, {
+    className: _AlertModal2.default['action'],
+    onClick: onClose
+  }, void 0, cancelText))));
+};
 
 exports.default = AlertModal;
 
@@ -9992,7 +9979,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _propTypes = __webpack_require__(2);
+var _propTypes = __webpack_require__(1);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
@@ -10048,7 +10035,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _propTypes = __webpack_require__(2);
+var _propTypes = __webpack_require__(1);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
@@ -10188,11 +10175,11 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _clsx = __webpack_require__(1);
+var _clsx = __webpack_require__(2);
 
 var _clsx2 = _interopRequireDefault(_clsx);
 
-var _propTypes = __webpack_require__(2);
+var _propTypes = __webpack_require__(1);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
@@ -10254,13 +10241,13 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-//import Components
+// import Components
 
 
-//import Actions
+// import Actions
 
 
-//import Styles
+// import Styles
 
 
 var _ref = _jsx("span", {}, void 0, "Subtotal");
@@ -10320,14 +10307,14 @@ var OrderCard = function (_React$Component) {
           show = _props.show,
           ordered = _props.ordered,
           business = _props.business,
-          sub_total = _props.sub_total,
+          subTotal = _props.subTotal,
           delivery_data = _props.delivery_data,
           onClose = _props.onClose,
           onOpen = _props.onOpen,
           onNext = _props.onNext,
           onDelete = _props.onDelete,
           dispatch = _props.dispatch,
-          other = _objectWithoutProperties(_props, ["classes", "className", "show", "ordered", "business", "sub_total", "delivery_data", "onClose", "onOpen", "onNext", "onDelete", "dispatch"]);
+          other = _objectWithoutProperties(_props, ["classes", "className", "show", "ordered", "business", "subTotal", "delivery_data", "onClose", "onOpen", "onNext", "onDelete", "dispatch"]);
 
       var openTime = this.state.openTime;
 
@@ -10372,7 +10359,7 @@ var OrderCard = function (_React$Component) {
           classes: { root: _OrderCard2.default["close"] },
           "aria-label": "Close",
           onClick: onClose
-        }, void 0, (0, _icons.close_dlg)())), _jsx("div", {
+        }, void 0, (0, _icons.closeDlgIcon)())), _jsx("div", {
           className: _OrderCard2.default["delivery-switch"]
         }, void 0, _jsx("button", {
           onClick: function onClick() {
@@ -10403,11 +10390,11 @@ var OrderCard = function (_React$Component) {
           }, void 0, (0, _icons.trush)())));
         })), _jsx("div", {
           className: _OrderCard2.default["flexview"]
-        }, void 0, _ref, _jsx("span", {}, void 0, business.currency.symbol, sub_total.toFixed(2))), _jsx("div", {
+        }, void 0, _ref, _jsx("span", {}, void 0, business.currency.symbol, subTotal.toFixed(2))), _jsx("div", {
           className: _OrderCard2.default["flexview"]
         }, void 0, _ref2, _jsx("span", {}, void 0, business.currency.symbol, delivery_data.type === _HomeActions.DELIVERY ? delivery_data.fee.toFixed(2) : "0.00")), _jsx("div", {
           className: (0, _clsx2.default)(_OrderCard2.default["flexview"], _OrderCard2.default["total"])
-        }, void 0, _ref3, _jsx("span", {}, void 0, business.currency.symbol, ((delivery_data.type === _HomeActions.DELIVERY ? delivery_data.fee : 0) + sub_total).toFixed(2)))),
+        }, void 0, _ref3, _jsx("span", {}, void 0, business.currency.symbol, ((delivery_data.type === _HomeActions.DELIVERY ? delivery_data.fee : 0) + subTotal).toFixed(2)))),
         _jsx("div", {
           className: _OrderCard2.default["footer"]
         }, void 0, _jsx(_DefaultButton2.default, {
@@ -10417,13 +10404,13 @@ var OrderCard = function (_React$Component) {
           }
         }, void 0, _ref4, _jsx("span", {}, void 0, _jsx("span", {
           className: "mr-3"
-        }, void 0, business.currency.symbol, ((delivery_data.type === _HomeActions.DELIVERY ? delivery_data.fee : 0) + sub_total).toFixed(2)), (0, _icons.next3)())))
+        }, void 0, business.currency.symbol, ((delivery_data.type === _HomeActions.DELIVERY ? delivery_data.fee : 0) + subTotal).toFixed(2)), (0, _icons.next3)())))
       ), _jsx(_DefaultButton2.default, {
         className: (0, _clsx2.default)(_OrderCard2.default["bag-btn"], show === true ? _OrderCard2.default["hidden"] : ""),
         onClick: onOpen
       }, void 0, _jsx("span", {}, void 0, _jsx("span", {
         className: "mr-3"
-      }, void 0, (0, _icons.shopping_bag)()), _ref5), _jsx("span", {}, void 0, business.currency.symbol, ((delivery_data.type === _HomeActions.DELIVERY ? delivery_data.fee : 0) + sub_total).toFixed(2))), _jsx(_TimeModal2.default, {
+      }, void 0, (0, _icons.shoppingBag)()), _ref5), _jsx("span", {}, void 0, business.currency.symbol, ((delivery_data.type === _HomeActions.DELIVERY ? delivery_data.fee : 0) + subTotal).toFixed(2))), _jsx(_TimeModal2.default, {
         openTime: openTime,
         handleClose: this.handleClose,
         handleSubmit: this.handleSaveTime,
@@ -10466,7 +10453,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _propTypes = __webpack_require__(2);
+var _propTypes = __webpack_require__(1);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
@@ -10533,7 +10520,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _propTypes = __webpack_require__(2);
+var _propTypes = __webpack_require__(1);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
@@ -10671,11 +10658,11 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _clsx = __webpack_require__(1);
+var _clsx = __webpack_require__(2);
 
 var _clsx2 = _interopRequireDefault(_clsx);
 
-var _propTypes = __webpack_require__(2);
+var _propTypes = __webpack_require__(1);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
@@ -11083,7 +11070,7 @@ var AddOrder = function (_React$Component) {
           classes: { root: _AddOrder2.default['close'] },
           'aria-label': 'Close',
           onClick: onClose
-        }, void 0, (0, _icons.close_dlg)())), _jsx('div', {
+        }, void 0, (0, _icons.closeDlgIcon)())), _jsx('div', {
           className: (0, _clsx2.default)(_AddOrder2.default['wrapper'])
         }, void 0, _jsx('div', {
           className: _AddOrder2.default['content']
@@ -11115,8 +11102,8 @@ var AddOrder = function (_React$Component) {
             return _jsx(_core.FormControlLabel, {
               value: v,
               control: _jsx(StyledRadio, {
-                checkedIcon: (0, _icons.radio_full)(),
-                icon: (0, _icons.radio_empty)()
+                checkedIcon: (0, _icons.radioFull)(),
+                icon: (0, _icons.radioEmpty)()
               }),
               label: v,
               classes: {
@@ -11145,8 +11132,8 @@ var AddOrder = function (_React$Component) {
             className: _AddOrder2.default['addon']
           }, i, _jsx(_core.FormControlLabel, {
             control: _jsx(StyledCheckBox, {
-              checkedIcon: (0, _icons.checkbox_full)(),
-              icon: (0, _icons.checkbox_empty)(),
+              checkedIcon: (0, _icons.checkboxFull)(),
+              icon: (0, _icons.checkboxEmpty)(),
               value: v.id,
               onChange: function onChange() {
                 return _this2.handleAddons(v);
@@ -11176,12 +11163,12 @@ var AddOrder = function (_React$Component) {
         }, void 0, _jsx('button', {
           className: _AddOrder2.default['control'],
           onClick: this.handleCountMinus
-        }, void 0, (0, _icons.minus_circle)()), _jsx('span', {
+        }, void 0, (0, _icons.minusCircle)()), _jsx('span', {
           className: _AddOrder2.default['count']
         }, void 0, count), _jsx('button', {
           className: _AddOrder2.default['control'],
           onClick: this.handleCountPlus
-        }, void 0, (0, _icons.plus_circle)())), _jsx(_DefaultButton2.default, {
+        }, void 0, (0, _icons.plusCircle)())), _jsx(_DefaultButton2.default, {
           className: 'd-flex align-items-center justify-content-between',
           onClick: this.handleAdd
         }, void 0, _ref2, _jsx('span', {}, void 0, business.currency.symbol, subtotal.toFixed(2))))))
@@ -11215,11 +11202,11 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _clsx = __webpack_require__(1);
+var _clsx = __webpack_require__(2);
 
 var _clsx2 = _interopRequireDefault(_clsx);
 
-var _propTypes = __webpack_require__(2);
+var _propTypes = __webpack_require__(1);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
@@ -11252,7 +11239,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-//import Styles
+// import Styles
 
 
 var CategoryMenu = function (_React$Component) {
@@ -11398,7 +11385,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _propTypes = __webpack_require__(2);
+var _propTypes = __webpack_require__(1);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
@@ -11470,6 +11457,12 @@ module.exports = require("react-credit-cards");
 
 /***/ }),
 /* 105 */
+/***/ (function(module, exports) {
+
+module.exports = require("card-validator");
+
+/***/ }),
+/* 106 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -11483,7 +11476,7 @@ exports.formatCVC = formatCVC;
 exports.formatExpirationDate = formatExpirationDate;
 exports.formatFormData = formatFormData;
 
-var _payment = __webpack_require__(106);
+var _payment = __webpack_require__(107);
 
 var _payment2 = _interopRequireDefault(_payment);
 
@@ -11533,7 +11526,7 @@ function formatCVC(value, ccnumber) {
 function formatExpirationDate(value) {
   var clearValue = clearNumber(value);
 
-  if (parseInt(clearValue.slice(0, 2)) > 12) return clearValue.slice(0, 1);
+  if (parseInt(clearValue.slice(0, 2), 10) > 12) return clearValue.slice(0, 1);
   // if(parseInt(clearValue.slice(0, 2)) > 12)
   //   return "0" + clearValue.slice(0, 1) + "/" + clearValue.slice(1, 2);
   if (clearValue.length >= 3) {
@@ -11550,16 +11543,10 @@ function formatFormData(data) {
 }
 
 /***/ }),
-/* 106 */
-/***/ (function(module, exports) {
-
-module.exports = require("payment");
-
-/***/ }),
 /* 107 */
 /***/ (function(module, exports) {
 
-module.exports = require("card-validator");
+module.exports = require("payment");
 
 /***/ }),
 /* 108 */
@@ -11580,11 +11567,11 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _clsx = __webpack_require__(1);
+var _clsx = __webpack_require__(2);
 
 var _clsx2 = _interopRequireDefault(_clsx);
 
-var _propTypes = __webpack_require__(2);
+var _propTypes = __webpack_require__(1);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
@@ -11616,7 +11603,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-//import Styles
+// import Styles
 
 
 var OrderForm = function (_React$Component) {
@@ -11709,7 +11696,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-//import Styles
+// import Styles
 
 
 var SettingsForm = function (_React$Component) {
@@ -11786,11 +11773,11 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _clsx = __webpack_require__(1);
+var _clsx = __webpack_require__(2);
 
 var _clsx2 = _interopRequireDefault(_clsx);
 
-var _propTypes = __webpack_require__(2);
+var _propTypes = __webpack_require__(1);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
@@ -11813,7 +11800,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-//import Styles
+// import Styles
 
 
 var AddressForm = function (_React$Component) {
