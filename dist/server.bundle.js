@@ -13510,7 +13510,7 @@ exports.default = function () {
       firstname: 'testMan',
       lastname: 'I am ',
       email: 'test@bakery.com',
-      phoneNumber: '+1 (111) 111-1111',
+      phoneNumber: '11111111111',
       password: '$2b$10$0aStd9TJJKJYvpnC2ioJqueI4q1LHmoojGgKGRapIjVIZrNJniW0O', //123456
       token: 'b40e7d7e-8b5b-4262-a5b9-c692b8acba8e'
     });
