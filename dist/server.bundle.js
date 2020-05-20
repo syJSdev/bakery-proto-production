@@ -1528,7 +1528,7 @@ var fetch_business = exports.fetch_business = function fetch_business() {
         });
         dispatch((0, _AppActions.loading_end)());
         resolve();
-      }, 1500);
+      }, 100);
     });
   };
 };
@@ -1599,7 +1599,7 @@ var fetch_branches = exports.fetch_branches = function fetch_branches() {
         });
         dispatch((0, _AppActions.loading_end)());
         resolve();
-      }, 1500);
+      }, 100);
     });
   };
 };
@@ -1921,7 +1921,7 @@ var fetch_products = exports.fetch_products = function fetch_products() {
         });
         dispatch((0, _AppActions.loading_end)());
         resolve();
-      }, 1500);
+      }, 100);
     });
   };
 };
@@ -1949,7 +1949,7 @@ var fetch_product = exports.fetch_product = function fetch_product(id) {
         });
         dispatch((0, _AppActions.loading_end)());
         resolve();
-      }, 1500);
+      }, 100);
     });
   };
 };
