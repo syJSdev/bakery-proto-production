@@ -85,7 +85,7 @@
     "css-modules-require-hook": "^4.2.2",
     "cssnano": "^3.7.0",
     "enzyme": "^3.10.0",
-    "enzyme-adapter-react-16": "^1.14.0",
+    "enzyme-adapter-react-16": "^1.15.2",
     "eslint": "^2.11.1",
     "eslint-config-airbnb": "^9.0.1",
     "eslint-plugin-ava": "^2.4.0",
