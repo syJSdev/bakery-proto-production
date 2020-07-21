@@ -29,7 +29,7 @@
     "cors": "^2.8.5",
     "cross-env": "^1.0.8",
     "crypto": "^1.0.1",
-    "cuid": "^1.3.8",
+    "cuid": "^2.1.8",
     "express": "^4.17.1",
     "google-map-react": "^1.1.4",
     "gotham-fonts": "^1.0.3",
